@@ -2,9 +2,9 @@
 
 class Weixin{
 
-	private $_TOKEN = 'angelfish';
-	private $_appid = 'wx849a0a817e70b3a9';
-	private $_secret = '2c25f7d13f9524d1ad7bf3d131b31d77';
+	private $_TOKEN = 'lvfondation';
+	private $_appid = 'wxbc477102c26e044b';
+	private $_secret = 'f196f384b8933d6927b9a38f8407379c';
 	private $_eventKey = array('A1','B1','C1','C2','B2','B4','A2');
 	private $_db = null;
 	private $_fromUsername = null;
@@ -139,11 +139,12 @@ class Weixin{
 					$baidu = json_decode($baidu, true);
 					$lat = $baidu['result'][0]['x'];
 					$lng = $baidu['result'][0]['y'];
-					$squares = $this->returnSquarePoint($lng,$lat,10000);
+					//$squares = $this->returnSquarePoint($lng,$lat,10000);
 
 
 
-					$info_sql = "select * from `same_store` where lat<>0 and lat>{$squares['right-bottom']['lat']} and lat<{$squares['left-top']['lat']} and lng<{$squares['left-top']['lng']} and lng>{$squares['right-bottom']['lng']} ";
+					//$info_sql = "select * from `same_store` where lat<>0 and lat>{$squares['right-bottom']['lat']} and lat<{$squares['left-top']['lat']} and lng<{$squares['left-top']['lng']} and lng>{$squares['right-bottom']['lng']} ";
+					$info_sql = "select * from `same_store`";
 					$rs = Yii::app()->db->createCommand($info_sql)->queryAll();
 					if(!$rs){
 						return $this->sendMsgForText($fromUsername, $toUsername, $time, "text", '很抱歉，您的附近没有门店');
