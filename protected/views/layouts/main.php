@@ -34,8 +34,6 @@
 
 	<?php echo $content; ?>
 
-
-
 <!-- 横屏代码 -->
 <div id="orientLayer" class="mod-orient-layer">
     <div class="mod-orient-layer__content">
