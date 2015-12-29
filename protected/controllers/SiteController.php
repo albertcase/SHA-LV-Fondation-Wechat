@@ -12,6 +12,12 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
+	public function actionInfo()
+	{
+		$this->layout='//layouts/wechat';
+		$this->render('info');
+	}
+
 	public function actionSpring()
 	{
 		$this->render('spring');

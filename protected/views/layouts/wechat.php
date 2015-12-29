@@ -13,28 +13,19 @@
 	<meta name="Keywords" content="">
 	<meta name="Description" content="...">
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/wechat/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/wechat/css/style.css" />
 
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/jweixin.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/PxLoader.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/iscroll.js"></script>
-    
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/public.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/wechat/js/jquery.js"></script>
+
     <script type="text/javascript">
     	var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";
     </script>
 
 </head>
 <body>
-	<div id="header">
-		<img src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/imgs/logo.jpg" width="100%" />
-	</div>
 
 	<?php echo $content; ?>
-
-
 
 <!-- 横屏代码 -->
 <div id="orientLayer" class="mod-orient-layer">

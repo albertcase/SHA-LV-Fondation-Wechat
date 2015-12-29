@@ -1,0 +1,402 @@
+html, body{
+	overflow: hidden;
+}
+
+.page{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	overflow: auto;
+	-ms-overflow-scrolling: touch; 
+    -moz-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch; 
+    -o-overflow-scrolling: touch; 
+}
+
+.con{
+	width: 90%;
+	height: 100%;
+	display: inline-block;
+}
+
+.bg{
+	height: 100%;
+}
+
+/* navigation */
+#navigation h1{
+	font-size: 2.0rem;
+	padding: 10% 0;
+}
+
+.navNode{
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	margin: 0 0 6% 0;
+	font-size: 1.2rem;
+}
+
+.navNode h2{
+	width: 40%;
+	background: #000;
+	font-size: 1.4rem;
+	color: #fff;
+	padding: 6px 0;
+	text-align: left;
+	text-indent: 1rem;
+	margin: 0 0 4% 0;
+	display: inline-block;
+}
+
+.ticket p{
+	padding: 0 0 10px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.navNode table{
+	width: 100%;
+	display: inline-block;
+	border-collapse:collapse;
+	border-spacing: 0;
+	margin: 0 0 6% 0;
+	border: 1px #b3b3b3 solid;
+}
+
+.navNode table tbody,.navNode table tbody tr{
+	width: 100%;
+	display: inline-block;
+}
+
+.navNode table td{
+	border-top: 1px #b3b3b3 solid;
+	padding: 3% 2%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+}
+
+.navNode.ticket table td{
+	border-right: 1px #b3b3b3 solid;
+	width: 50%;
+}
+
+.navNode.ticket table td:nth-child(2){
+	border-right: none;
+}
+
+.navNode.operate_time table td{
+	width: 33.5%;
+	border-left: 1px #b3b3b3 solid;
+}
+
+.navNode.operate_time table td:nth-child(1){
+	width: 24%;
+	border-left: none;
+}
+
+.navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
+	width: 38.2%;
+}
+
+.navNode.operate_time table td:nth-child(2){
+	background: #f1f1f1;
+	/*border: 1px #5b5b5b solid;
+	border-bottom: none;
+	border-top: none;*/
+}
+
+/*.navNode.operate_time table tr:nth-child(1) td:nth-child(2){
+	border-top: 1px #5b5b5b solid;
+}
+
+.navNode.operate_time table tr:last-child td:nth-child(2){
+	border-bottom: 1px #5b5b5b solid;
+}
+*/
+
+/* traffic */
+#traffic h1{
+	font-size: 2.3rem;
+	padding: 10% 0 2% 0;
+	text-align: left;
+}
+
+.publicTransit p, .Shuttle p{
+	padding: 2% 0;
+	width: 100%;
+	display: inline-block;
+	line-height: 1.8rem;
+}
+
+.publicTransit p span{
+	font-size: 1.4rem;
+}
+
+.publicTransit p em{
+	display: inline-block;
+	background: #fbdc2a;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	text-align: center;
+	color: #000;
+}
+
+.publicTransit p.ditie em{
+	border-radius: 16px;
+	width: 16px;
+}
+
+.publicTransit p.gche em{
+	border-radius: 0;
+	width: auto;
+	padding: 0 5px;
+	background: #d74db7;
+}
+
+.Shuttle p{
+	font-size: 1.4rem;
+}
+
+
+/* boulogne */
+#boulogne h1{
+	padding: 6% 0 0 0;
+}
+
+.boulogne_info p{
+	line-height: 2.0rem;
+	font-size: 1.4rem;
+	padding: 6px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+
+/* store */
+#store{
+	width: 100%;
+	background: #101311; 
+}
+
+#store .con{
+	position: absolute;
+	left: 5%;
+	top: 0;
+}
+
+.logo{
+	width: 27%;
+	margin: 9% 0 0 0;
+	display: inline-block;
+}
+
+.storeInfo{
+	font-size: 1.6rem;
+	color: #fff;
+	padding: 15px 0;
+}
+
+.storeInfo p{
+	padding: 6px 0;
+	width: 100%;
+	display: inline-block;
+	line-height: 2.0rem;
+}
+
+.storeInfo a{
+	color: #fff;
+}
+
+
+/* langlang */
+#langlang .con, #qrcode .con{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#langlang{
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+.headPortrait{
+	width: 67%;
+	display: inline-block;
+	margin: 12% 0 0 0;
+}
+
+.infoArea{
+	position: absolute;
+	left: 0;
+	top: 57%;
+	width: 100%;
+	text-align: center;
+}
+
+.infoArea ul{
+	width: 60%;
+	display: inline-block;
+}
+
+.infoArea li{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	color: #fff;
+}
+
+.infoArea li img{
+	width: 42%;
+	display: inline-block;
+}
+
+.infoArea li p,.telbtn p{
+	padding: 6px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.infoArea li:nth-child(2){
+	float: right;
+}
+
+.infoFooter{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 5%;
+	text-align: center;
+}
+
+.telbtn{
+	width: 30%;
+	display: inline-block;
+}
+
+.telbtn span{
+	width: 67px;
+	height: 67px;
+	border-radius: 67px;
+	display: inline-block;
+	background: #4cd964 url("../imgs/telIcon.png") no-repeat center;
+	background-size: 56% auto;
+	transform:rotate(-145deg);
+	-ms-transform:rotate(-145deg); 	/* IE 9 */
+	-moz-transform:rotate(-145deg); 	/* Firefox */
+	-webkit-transform:rotate(-145deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-145deg); 	/* Opera */
+}
+
+.telbtn span.connect{
+
+  transform:rotate(0deg);
+  -ms-transform:rotate(0deg); 	/* IE 9 */
+  -moz-transform:rotate(0deg); 	/* Firefox */
+  -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+  -o-transform:rotate(0deg); 	/* Opera */
+
+  -webkit-transform-origin: center;
+  transform-origin: center;
+
+}
+
+#timing{
+	display: none;
+	font-size: 2.0rem;
+	line-height: 5.6rem;
+}
+
+
+/* qrcode */
+.qrcodeImg{
+	width: 70%;
+	display: inline-block;
+	margin: 15% 0;
+}
+
+.storeMap{
+	display: inline-block;
+	margin: 0 0 10% 0;
+}
+
+.navTips{
+	line-height: 1.8rem;
+}
+
+
+
+
+/* 6plus */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+	.navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
+		width: 38%;
+	}
+}
+
+/* 6 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (orientation: portrait) {
+	.navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
+		width: 37.8%;
+	}
+}
+
+/* 5s */
+@media handheld and (min-height:490px),screen and (max-height:510px) {
+	.navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
+		width: 37%;
+	}
+}
+
+/* 4s */
+@media handheld and (min-height:400px),screen and (max-height:420px) {
+	.headPortrait{
+		width: 46%;
+	}
+
+	.infoArea{
+		top: 50%;
+	}
+
+	.infoFooter{
+		bottom: 4%;
+	}
+
+	.qrcodeImg{
+		width: 56%;
+		display: inline-block;
+		margin: 15% 0;
+	}
+
+	.infoArea li p, .telbtn p{
+		font-size: 1.3rem;
+	}
+
+	.bg{
+		width: 100%;
+	}
+
+	#timing{
+		display: none;
+		font-size: 1.8rem;
+		line-height: 5.6rem;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
