@@ -69,8 +69,16 @@ html, body{
 	display: inline-block;
 }
 
+.navNode table tbody tr{
+	border-bottom: 1px #b3b3b3 solid;
+}
+
+.navNode table tbody tr:last-child{
+	border-bottom: none;
+}
+
 .navNode table td{
-	border-top: 1px #b3b3b3 solid;
+	/*border-top: 1px #b3b3b3 solid;*/
 	padding: 3% 2%;
 	text-align: center;
 	display: inline-block;
