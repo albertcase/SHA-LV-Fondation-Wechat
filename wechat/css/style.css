@@ -38,6 +38,10 @@ html, body{
 	font-size: 1.2rem;
 }
 
+.navNode.boulogne_info{
+	width: 90%;
+}
+
 .navNode h2{
 	width: 40%;
 	background: #000;
