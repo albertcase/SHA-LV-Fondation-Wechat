@@ -154,7 +154,7 @@ class Weixin{
             		for($i=0;$i<count($rs);$i++){
             			$meter = $this->getDistance($lat,$lng,$rs[$i]['lat'],$rs[$i]['lng']);
             			$meters = "(距离约" . $meter ."米)";
-            			$datas[$meter] = array('title'=>$rs[$i]['name'].$meters,'description'=>$rs[$i]['name'],'picUrl'=>Yii::app()->request->hostInfo.'/'.Yii::app()->request->baseUrl.'/'.$rs[$i]['picUrl'],'url'=>'http://flvwechat.samesamechina.com/wechat/store'); 
+            			$datas[$meter] = array('title'=>$rs[$i]['name'].$meters,'description'=>'路易威登基金会致力于鼓励和推动当代艺术创作，位于巴黎城西布洛涅森林内，其主体建筑由法兰克•盖瑞亲自设计。','picUrl'=>Yii::app()->request->hostInfo.'/'.Yii::app()->request->baseUrl.'/'.$rs[$i]['picUrl'],'url'=>'http://flvwechat.samesamechina.com/wechat/store'); 
             		}
 					ksort($datas);
 					$i=0;
