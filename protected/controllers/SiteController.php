@@ -14,7 +14,6 @@ class SiteController extends Controller
 
 	public function actionInfo()
 	{
-		$this->layout='//layouts/wechat';
 		$this->render('info');
 	}
 

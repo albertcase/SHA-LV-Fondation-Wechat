@@ -38,14 +38,17 @@ html, body{
 	font-size: 1.2rem;
 }
 
+.navNode.boulogne_info{
+	width: 90%;
+}
+
 .navNode h2{
 	width: 40%;
 	background: #000;
 	font-size: 1.4rem;
 	color: #fff;
 	padding: 6px 0;
-	text-align: left;
-	text-indent: 1rem;
+	text-align: center;
 	margin: 0 0 4% 0;
 	display: inline-block;
 }
@@ -70,8 +73,16 @@ html, body{
 	display: inline-block;
 }
 
+.navNode table tbody tr{
+	border-bottom: 1px #b3b3b3 solid;
+}
+
+.navNode table tbody tr:last-child{
+	border-bottom: none;
+}
+
 .navNode table td{
-	border-top: 1px #b3b3b3 solid;
+	/*border-top: 1px #b3b3b3 solid;*/
 	padding: 3% 2%;
 	text-align: center;
 	display: inline-block;
@@ -98,7 +109,7 @@ html, body{
 }
 
 .navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
-	width: 38.2%;
+	width: 38%;
 }
 
 .navNode.operate_time table td:nth-child(2){
@@ -170,7 +181,7 @@ html, body{
 .boulogne_info p{
 	line-height: 2.0rem;
 	font-size: 1.4rem;
-	padding: 6px 0;
+	padding: 6px 0 16px 0;
 	display: inline-block;
 	width: 100%;
 }

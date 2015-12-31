@@ -137,11 +137,11 @@
 				</tr>
 			</table>
 
-			<p class="navTips">
+			<!-- <p class="navTips">
 				* 2015/12/25圣诞节关闭<br />
 				* 2016/01/01元旦关闭<br />
 				<br />
-			</p>
+			</p> -->
 		</div>
 
 
