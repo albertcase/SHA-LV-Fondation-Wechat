@@ -12,6 +12,7 @@ html, body{
     -moz-overflow-scrolling: touch; 
     -webkit-overflow-scrolling: touch; 
     -o-overflow-scrolling: touch; 
+    font-family: "微软雅黑", "Microsoft YaHei", Arial;
 }
 
 .con{
