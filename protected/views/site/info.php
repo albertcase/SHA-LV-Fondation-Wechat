@@ -55,11 +55,6 @@ var worksInfo = {
 }
 
 
-$(function () {
-
-    $("#zoom").zoombieLens();
-    
-}); 
 </script>
 
 <div id="wrapp">
@@ -94,9 +89,9 @@ $(function () {
 <script type="text/javascript">
 
 function GetQueryString(name){
-var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-var r = window.location.search.substr(1).match(reg);
-if(r!=null)return unescape(r[2]); return null;
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if(r!=null)return unescape(r[2]); return null;
 }
 
 var curw = GetQueryString("w");
@@ -104,18 +99,16 @@ var curw = GetQueryString("w");
 var workPic = new Image();
 	workPic.src = "/vstyle/imgs/works/" + curw + ".jpg";
 	workPic.onload = function(){
-		console.log(this.width())
+		$("#zoom").attr("src", "/vstyle/imgs/works/" + curw + ".jpg").zoombieLens();
+
+		var myScroll = new IScroll('#wrapp', { 
+		    preventDefault:false,
+		    //click:iScrollClick(), //调用判断函数
+		    scrollbars: false, //有滚动条
+		    fixedScrollbar: false,
+		    // momentum: true,
+		    //useTransition: true
+		});
 	}
-
-
-var myScroll = new IScroll('#wrapp', { 
-	    preventDefault:false,
-	    //click:iScrollClick(), //调用判断函数
-	    scrollbars: false, //有滚动条
-	    fixedScrollbar: false,
-	    // momentum: true,
-	    //useTransition: true
-	});
-
 
 </script>
