@@ -141,6 +141,7 @@ html, body{
 	width: 100%;
 	display: inline-block;
 	line-height: 1.8rem;
+	font-size: 1.4rem;
 }
 
 .publicTransit p span{
@@ -169,9 +170,6 @@ html, body{
 	background: #d74db7;
 }
 
-.Shuttle p{
-	font-size: 1.4rem;
-}
 
 
 /* boulogne */
