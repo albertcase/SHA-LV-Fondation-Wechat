@@ -8,8 +8,8 @@
     		<ul>
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=1"></a>
+	    				<a href="info?w=2"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c1.jpg" width="100%" />
     			</li>
@@ -17,20 +17,20 @@
     			<li>
     				<div class="pli_con">
     					<div class="lileft">
-		    				<a href="javascript:;"></a>
-		    				<a href="javascript:;"></a>
+		    				<a href="info?w=3"></a>
+		    				<a href="info?w=4"></a>
 		    			</div>
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=5"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c2.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=6"></a>
 	    				<div class="lileft">
-		    				<a href="javascript:;"></a>
-		    				<a href="javascript:;"></a>
+		    				<a href="info?w=7"></a>
+		    				<a href="info?w=8"></a>
 		    			</div>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c3.jpg" width="100%" />
@@ -38,38 +38,38 @@
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=9"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c4.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=10"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c5.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=11"></a>
+	    				<a href="info?w=12"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c6.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=13"></a>
+	    				<a href="info?w=14"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c7.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;"></a>
-	    				<a href="javascript:;"></a>
+	    				<a href="info?w=15"></a>
+	    				<a href="info?w=16"></a>
 	    			</div>
 	    			<img src="" sourcesrc="/vstyle/imgs/c8.jpg" width="100%" />
     			</li>

@@ -6,7 +6,7 @@
     $.fn.zoombieLens = function (options) {
 
         var defaults = {
-            Size: 200,
+            Size: 300,
             borderSize: 0,
             borderColor: "#888"
         };
@@ -14,7 +14,7 @@
         var lensType = "background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
             + "px;float: left;display: none;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;border: " + String(options.borderSize) + "px solid " + options.borderColor
-            + ";background-repeat: no-repeat;position: absolute;";
+            + ";background-repeat: no-repeat;position: absolute;z-index:9;";
 
         return this.each(function () {
             obj = $(this);
@@ -47,12 +47,20 @@
             });
             $(this).on("touchend", function(){
                 target.hide();
+                $(".zoomStatus").show();
+            });
+
+            $(".zoomStatus").on("touchstart", function(){
+                $(this).hide();
             });
 
             // target.mousemove(setImage);
             // $(this).mousemove(setImage);
 
             function setImage(e) {
+                $(".zoomtips").fadeOut();
+                $(".introFooter").fadeIn();
+
             	var touch = e.originalEvent.changedTouches[0];
 
                 var leftPos = parseInt(touch.pageX - offset.left);
