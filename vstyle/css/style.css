@@ -192,13 +192,13 @@
 .zoomtips{
 	width: 100%;
 	position: absolute;
-	bottom: -15%;
+	bottom: -17%;
 }
 
 .introFooter{
 	width: 100%;
 	position: absolute;
-	bottom: -11%;
+	bottom: -23%;
 	display: none;
 }
 
@@ -208,12 +208,12 @@
 }
 
 .introFooter a{
-	width: 30%;
+	width: 36%;
 	display: inline-block;
 }
 
 .introFooter a img{
-	width: 50%;
+	width: 52%;
 	display: inline-block;
 }
 
@@ -250,9 +250,7 @@
 /* 4s */
 
 @media handheld and (min-height:400px),screen and (max-height:420px) {
-	.zoomtips{
-		bottom: -8%;
-	}
+
 }
 
 
