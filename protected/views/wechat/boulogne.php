@@ -9,7 +9,7 @@
 				<img src="/wechat/imgs/boulogne.jpg" width="100%" />
 			</p>
 			<p>
-				<img src="/wechat/imgs/boulogne_text.png" width="100%" />
+				<img src="/wechat/imgs/boulogne_text.jpg" width="100%" />
 			</p>
 		</div>
 

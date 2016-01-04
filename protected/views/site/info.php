@@ -93,8 +93,19 @@ $(function () {
 
 <script type="text/javascript">
 
+function GetQueryString(name){
+var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+var r = window.location.search.substr(1).match(reg);
+if(r!=null)return unescape(r[2]); return null;
+}
 
+var curw = GetQueryString("w");
 
+var workPic = new Image();
+	workPic.src = "/vstyle/imgs/works/" + curw + ".jpg";
+	workPic.onload = function(){
+		console.log(this.width())
+	}
 
 
 var myScroll = new IScroll('#wrapp', { 
