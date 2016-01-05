@@ -172,6 +172,7 @@
 	width: 100%;
 	position: relative;
 	font-family: "黑体", "STHeiti", "Arial";
+	opacity: 0;
 }
 
 .imgInfo h2{
@@ -198,7 +199,7 @@
 .introFooter{
 	width: 100%;
 	position: absolute;
-	bottom: -22%;
+	bottom: -16.6%;
 	display: none;
 }
 

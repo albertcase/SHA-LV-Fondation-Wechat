@@ -59,6 +59,7 @@ var worksInfo = {
 
 <div id="wrapp">
     <div id="scroller">
+
     	<div class="imgInfo">
 	    	<h2>杨福东<br />New Women II, 2015 </h2>
 	    	<div class="zoomArea">
@@ -109,6 +110,7 @@ var workPic = new Image();
 		    // momentum: true,
 		    //useTransition: true
 		});
+		$(".imgInfo").css({"opacity": 1});
 	}
 
 </script>
