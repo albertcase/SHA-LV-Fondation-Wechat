@@ -1,3 +1,16 @@
+/* Required */
+img.colorify:not(.visible) {
+  opacity: 0;
+  filter: blur(3px);
+}
+
+img.colorify:not(.all-loaded).all-not-loaded {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
+}
 
 
 #header {
@@ -59,15 +72,55 @@
 }
 
 
+/* --- index --- */
+#index #header {
+	position: absolute;
+	z-index: 6;
+	top: 8%;
+	left: 0;
+	width: 100%;
+	height: 15%;
+	padding: 0;
+	/*box-shadow: 0px 0px 3px #000;*/
+}
+
+
+#index #wrapp {
+	position: absolute;
+	z-index: 1;
+	top: 23%;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.indexCon{
+	width: 100%;
+	height: 100%;
+	background:#fff url("../imgs/abstract.jpg") no-repeat center 0;
+	background-size: 80% auto;
+	display: inline-block;
+}
+
+.enterBtn{
+	width: 70%;
+	position: absolute;
+	left: 50%;
+	bottom: 12%;
+	margin: 0 0 0 -35%;
+}
+
+
 
 /* --- home --- */
-#home li{
+.photo li{
 	width: 100%;
 	display: inline-block;
 	position: relative;
 }
 
-#home li .pli_con{
+.photo li .pli_con{
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -75,8 +128,15 @@
 	top: 0;
 }
 
-#home li .pli_con .lileft{
+.photo li .pli_con .lileft{
 	width: 58%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}
+
+.photo li .pli_con .liright{
+	width: 42%;
 	height: 100%;
 	float: left;
 	display: inline-block;
@@ -87,8 +147,6 @@
 	height: 100%;
 	float: left;
 	display: inline-block;
-	background: blue;
-	opacity: 0.5;
 }
 
 #home li:nth-child(1) a:nth-child(1){
@@ -97,14 +155,12 @@
 
 #home li:nth-child(1) a:nth-child(2){
 	width: 45.5%;
-	background: pink;
 }
 
 
 #home li:nth-child(2) a{
 	width: 42%;
 	height: 100%;
-	background: yellow;
 }
 
 #home li:nth-child(2) .lileft a:nth-child(1){
@@ -115,14 +171,12 @@
 #home li:nth-child(2) .lileft a:nth-child(2){
 	width: 100%;
 	height: 53%;
-	background: pink;
 }
 
 
 #home li:nth-child(3) a{
 	width: 42%;
 	height: 100%;
-	background: yellow;
 }
 
 #home li:nth-child(3) .lileft a:nth-child(1){
@@ -133,7 +187,6 @@
 #home li:nth-child(3) .lileft a:nth-child(2){
 	width: 100%;
 	height: 47%;
-	background: pink;
 }
 
 
@@ -143,7 +196,6 @@
 
 #home li:nth-child(6) a:nth-child(2){
 	width: 57%;
-	background: pink;
 }
 
 
@@ -153,7 +205,6 @@
 
 #home li:nth-child(7) a:nth-child(2){
 	width: 49.5%;
-	background: pink;
 }
 
 
@@ -163,8 +214,55 @@
 
 #home li:nth-child(8) a:nth-child(2){
 	width: 48%;
-	background: pink;
 }
+
+
+/* -------- exhibition -------- */
+
+#exhibition li:nth-child(1) a:nth-child(1){
+	width: 100%;
+	height: 100%;
+}
+
+#exhibition li:nth-child(2) a{
+	width: 100%;
+	height: 100%;
+}
+
+#exhibition li:nth-child(3) a:nth-child(1){
+	width: 52%;
+}
+
+#exhibition li:nth-child(3) a:nth-child(2){
+	width: 48%;
+}
+
+#exhibition li:nth-child(4) a:nth-child(1){
+	width: 52%;
+}
+
+#exhibition li:nth-child(4) a:nth-child(2){
+	width: 48%;
+}
+
+#exhibition li:nth-child(5) a:nth-child(1){
+	width: 57%;
+}
+
+#exhibition li:nth-child(5) a:nth-child(2){
+	width: 43%;
+}
+
+.photo#exhibition li:nth-child(6)  .pli_con .lileft{
+	width: 56%;
+}
+
+.photo#exhibition li:nth-child(6)  .pli_con .liright{
+	width: 44%;
+}
+
+
+
 
 
 /* --- zoom --- */
@@ -175,9 +273,23 @@
 	opacity: 0;
 }
 
+.workDetailed{
+	height: 87%;
+	position: fixed;
+	left: 0;
+	top: 14%;
+	opacity: 1;
+	z-index: 10;
+	background: #fff;
+	text-align: center;
+	line-height: 1.8rem;
+	display: none;
+}
+
 .imgInfo h2{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	width: 100%;
+	line-height: 2.0rem;
 }
 
 .zoomArea{
@@ -193,13 +305,13 @@
 .zoomtips{
 	width: 100%;
 	position: absolute;
-	bottom: -17%;
+	bottom: 5%;
 }
 
 .introFooter{
 	width: 100%;
 	position: absolute;
-	bottom: -16.6%;
+	bottom: 5%;
 	display: none;
 }
 
@@ -224,11 +336,34 @@
 	left: 50%;
 	top: 50%;
 	margin: -6% 0 0 -6%;
-	display: none;
 }
 
+.backBtn{
+	width: 14%;
+	position: absolute;
+	left: 6%;
+	top: -2%;
+	z-index: 12;
+	background: url("../../vstyle/imgs/backBtn.png") no-repeat left center;
+	background-size: 16% auto;
+	color: #000;
+	font-size: 1.4rem;
+	padding: 0 0 0 3%;
+}
 
+.mirror{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
+}
 
+.narrowIcon{
+	width: 12%;
+	position: absolute;
+	left: 50%;
+	bottom: 12%;
+	margin: 0 0 0 -6%;
+	z-index: 10;
+	display: none;
+}
 
 
 /* 6plus */
@@ -252,10 +387,54 @@
 
 @media handheld and (min-height:400px),screen and (max-height:420px) {
 
+	#header {
+		height: 16%;
+	}
+
+	#wrapp {
+		top: 16%;
+	}
+
+	.workDetailed{
+		height: 85%;
+		top: 16%;
+	}
+
 }
 
 
 
+
+
+
+
+.zoomStatus{
+    -webkit-animation: handsAni 2s infinite ease-in-out;
+    -moz-animation: handsAni 2s infinite ease-in-out;
+    animation: handsAni 2s infinite ease-in-out;
+}
+
+
+
+/**
+ * = animate 动画样式
+ *******************************************************************************************************/
+/*箭头指示引导*/
+@-webkit-keyframes handsAni {
+  0%,30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes handsAni {
+  0%,30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes handsAni {
+  0%,30% {opacity: 1;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 
 

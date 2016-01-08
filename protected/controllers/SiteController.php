@@ -7,14 +7,34 @@ class SiteController extends Controller
 	 * when an action is not explicitly requested by users.
 	 */
 
-	public function actionIndex()
+	public function actionIndex_collection()
 	{
-		$this->render('index');
+		$this->render('index_collection');
+	}
+
+	public function actionIndex_exhibition()
+	{
+		$this->render('index_exhibition');
+	}
+
+	public function actionCollection()
+	{
+		$this->render('collection');
+	}
+
+	public function actionExhibition()
+	{
+		$this->render('exhibition');
 	}
 
 	public function actionInfo()
 	{
 		$this->render('info');
+	}
+
+	public function actionTest()
+	{
+		$this->render('test');
 	}
 
 	public function actionSpring()

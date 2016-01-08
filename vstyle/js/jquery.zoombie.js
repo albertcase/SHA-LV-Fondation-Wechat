@@ -6,12 +6,13 @@
     $.fn.zoombieLens = function (options) {
 
         var defaults = {
-            Size: 300,
+            Size: 270,
             borderSize: 0,
-            borderColor: "#888"
+            borderColor: "#888",
+            lensCss: 'mirror'
         };
         var options = $.extend(defaults, options);
-        var lensType = "background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
+        var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
             + "px;float: left;display: none;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;position: absolute;z-index:9;";
@@ -43,15 +44,34 @@
             $(this).on("touchmove", setImage);
 
             target.on("touchend", function(){
-                target.hide();
+                //target.hide();
+                //console.log(target.css("display"));
+                if(target.css("display") != "none"){
+                    $(".narrowIcon").show();
+                }else{
+                    $(".zoomStatus").show();
+                }; 
             });
             $(this).on("touchend", function(){
-                target.hide();
-                $(".zoomStatus").show();
+                //target.hide();
+                //console.log(target.css("display"));
+                if(target.css("display") != "none"){
+                    $(".narrowIcon").show();
+                }else{
+                    $(".zoomStatus").show();
+                };
+
+                
             });
 
             $(".zoomStatus").on("touchstart", function(){
+                $(this).fadeOut();
+            });
+
+            $(".narrowIcon").on("touchstart", function(){
                 $(this).hide();
+                target.hide();
+                $(".zoomStatus").show();
             });
 
             // target.mousemove(setImage);
@@ -60,6 +80,7 @@
             function setImage(e) {
                 $(".zoomtips").fadeOut();
                 $(".introFooter").fadeIn();
+                $(".narrowIcon").hide();
 
             	var touch = e.originalEvent.changedTouches[0];
 
@@ -68,20 +89,42 @@
 
                 if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
                     target.hide();
+                    $(".zoomStatus").show();
                 }else {
-                    target.show();
-
+                    target.fadeIn();
+                    $(".zoomStatus").hide();
+ 
                     leftPos = String(((touch.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
                     topPos = String(((touch.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
+
                     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    // if(leftPos * (-1) >= 0 && leftPos * (-1) <= target.width()*2 - target.offset().left*2){
+                    //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    // }
+
+                    // if(leftPos * (-1) >= 0 && leftPos * (-1) <= target.width()*2 - target.offset().left*2 && topPos * (-1) >= 0 && topPos * (-1) <= target.height()){
+                    //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    // }
+                    
 
                     leftPos = String(touch.pageX - target.width() / 2);
                     topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - offset.top);
                     target.css({ left: leftPos + 'px', top: topPos + 'px' });
+                    //target.css({ left: '50%', top: '50%', "margin-top": -parseInt(options.Size/2), "margin-left": -parseInt(options.Size/2) });
                 }
             }
+
+            $(".backBtn").click(function(){
+                $(".imgInfo").hide();
+                $(".mirror").remove();
+                $(".zoomtips").fadeIn();
+                $(".introFooter").fadeOut();
+                $(".zoomStatus").show();
+                $(".narrowIcon").hide();
+            })
         });
     };
+
 })(jQuery);
 
 
