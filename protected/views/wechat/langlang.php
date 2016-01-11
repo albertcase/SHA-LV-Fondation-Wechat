@@ -3,7 +3,7 @@
 		background: #101311;
 	}
 </style>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/wechat/js/PxLoader.js.js"></script>
+<script type="text/javascript" src="/wechat/js/PxLoader.js.js"></script>
 <div class="page" id="langlang">
 	<img src="" sourcesrc="imgs/qrcode_bg.jpg" class="bg" />
 	<div class="con">
