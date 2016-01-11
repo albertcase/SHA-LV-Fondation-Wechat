@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/wechat/css/style.css" />
 
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/wechat/js/jquery.js"></script>
-
+	
     <script type="text/javascript">
     	var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";
     </script>
