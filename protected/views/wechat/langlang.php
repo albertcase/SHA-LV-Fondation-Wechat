@@ -3,21 +3,22 @@
 		background: #101311;
 	}
 </style>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/wechat/js/PxLoader.js.js"></script>
 <div class="page" id="langlang">
-	<img src="imgs/qrcode_bg.jpg" class="bg" />
+	<img src="" sourcesrc="imgs/qrcode_bg.jpg" class="bg" />
 	<div class="con">
 		<div class="headPortrait">
-			<img src="imgs/langlang.png" width="100%" />
+			<img src="" sourcesrc="imgs/langlang.png" width="100%" />
 		</div>
 
 		<div class="infoArea">
 			<ul>
 				<li>
-					<img src="imgs/remind.png" />
+					<img src="" sourcesrc="imgs/remind.png" />
 					<p>提醒我</p>
 				</li>
 				<li>
-					<img src="imgs/message.png" />
+					<img src="" sourcesrc="imgs/message.png" />
 					<p>信息</p>
 				</li>
 			</ul>
@@ -35,6 +36,43 @@
 </div>
 
 <script type="text/javascript">
+	/* 图片加载 */
+	function LoadFn ( arr , fn , fn2){
+	        var loader = new PxLoader();
+	        for( var i = 0 ; i < arr.length; i ++)
+	        {
+	            loader.addImage(arr[i]);
+	        };
+	        
+	        loader.addProgressListener(function(e) {
+	                var percent = Math.round( e.completedCount / e.totalCount * 100 );
+	                if(fn2) fn2(percent)
+	        }); 
+	        
+	        
+	        loader.addCompletionListener( function(){
+	            if(fn) fn();    
+	        });
+	        loader.start(); 
+	}
+
+
+	var imgProArray = [
+		"/wechat/audio/langlang_LV_Foundation.aac"
+	];
+
+
+	 // 当图片加载完成之后在添加进入页面            
+	LoadFn(imgProArray , function (){
+		$("img").each(function(){ 
+	        $(this).attr("src",$(this).attr("sourcesrc"));
+	    })
+	    audioFun(0);	       
+	} , function (p){
+	    console.log(p+"%");
+	});
+
+
 	function timingFun(){
 		$(".infoArea ul").hide();
 		$("#timing").show();
@@ -87,8 +125,6 @@
         //     audio.play();
         // }, false);
     }
-
-    audioFun(0);
 
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
