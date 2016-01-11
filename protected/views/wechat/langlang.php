@@ -77,7 +77,7 @@
 
 
 
-	var audioSrc = ["/wechat/audio/audio.m4a","/wechat/audio/audio.m4a"];
+	var audioSrc = ["/wechat/audio/langlang_LV_Foundation.aac","/wechat/audio/langlang_LV_Foundation.aac"];
     var audio = document.createElement("audio");
     function audioFun(num){
         audio.src = audioSrc[num];
