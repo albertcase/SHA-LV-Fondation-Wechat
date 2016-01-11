@@ -2,6 +2,9 @@
 	body{
 		background: #101311;
 	}
+	#langlang{
+		opacity: 0;
+	}
 </style>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/wechat/js/PxLoader.js"></script>
 <div class="page" id="langlang">
@@ -67,6 +70,7 @@
 		$("img").each(function(){ 
 	        $(this).attr("src",$(this).attr("sourcesrc"));
 	    })
+	    $("#langlang").stop().animate({"opacity": 1}, 300);
 	    audioFun(0);	       
 	} , function (p){
 	    console.log(p+"%");
