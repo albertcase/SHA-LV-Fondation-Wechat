@@ -113,7 +113,7 @@
 			window.location.href = "qrcode";
 		}else{
 			timingFun();
-			audioFun(0);
+			audioFun(1);
 		}
 	})
 
