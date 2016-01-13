@@ -61,7 +61,8 @@
 
 
 	var imgProArray = [
-		"/wechat/audio/langlang_LV_Foundation.aac"
+		"/wechat/audio/langlang_LV_Foundation.aac",
+		"/wechat/audio/ring.mp3"
 	];
 
 
