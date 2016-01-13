@@ -1,0 +1,163 @@
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/swiper.min.js"></script>
+<div class="arr">
+	<img src="" sourcesrc="/vstyle/imgs/arr.png" width="100%" />
+</div>
+
+
+<div class="imgInfo workDetailed gallery_info">
+		<a href="javascript:;" class="backBtn">
+			返回
+		</a>
+
+		<div class="gallerySlide">
+
+		    <div class="bShowImg">
+		           <img src="" id="galleryPhoto" />
+		    </div>
+
+		</div>
+
+		<div class="photoInfo">
+		                <h2>
+							作品简介
+						</h2>
+
+						<div class="photoInfo_con">
+							<!-- Swiper -->
+						    <div class="swiper-container">
+						        <div class="swiper-wrapper">
+						            <div class="swiper-slide" id="g_intro">
+
+							        </div>
+							        </div>
+
+							    </div>
+						</div>
+			
+		</div>
+
+    	<div class="introFooter">
+    		<a href="javascript:;" class="moreBtn">
+    			<img src="" sourcesrc="/vstyle/imgs/moreBtn.png" />
+    		</a>
+    	</div>
+
+	</div>
+
+
+<div id="wrapp">
+    <div id="scroller">
+    	
+    	<div class="page gallery" colorify-lazy-reveal id="home">
+
+    		<ul>
+    			<li>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g1.jpg" width="100%" />
+    			</li>
+
+    			<li>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g2.jpg" width="100%" />
+    			</li>
+
+    			<li>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g3.jpg" width="100%" />
+    			</li>
+
+    			<li>
+	    				<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g4.jpg" width="100%" />
+    			</li>
+    		</ul>
+			
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/colorify.js"></script>
+
+
+<script type="text/javascript">
+var infoArr = {
+	"g0": "<p>这件雕塑作品的题目，“奴隶生活的地方”（Where the Slaves Live），源自“vernaculaire”（“乡土”）的拉丁语词根“verna”（意为“奴隶”）。这件作品的外形颇为神秘，好似蓄水池，这也是安 德里昂·维拉尔·若加斯（Adrian Villar Rojas）惯用的题材。带着一种超越时间的奇艺色彩，这件作品被设计成一个着陆在地球上的“小小星球”，不着痕迹地将考古学与科幻合为一体。</p><p>“奴隶生活的地方”由若干层来自世界各地的有机和无机材料（泥土、颜料、植物、蔬菜、石头、炭渣、水泥、青草、化石、珊瑚、面包、水果、衣物、鞋履等）构 成，堪称是一件“活的雕塑”，随着时间的流转而不断变化。在这个生态系统中，艺术家在雕塑中嵌入了个人痕迹，令人不禁想到人类的存在。人类成为大自然及其 演化不可分割的部分，和大自然一道经历着从未停止过的嬗变。</p>",
+	"g1": "<p>这件声音雕塑运用有形与无形，将手工技艺与数字工具相结合，由20根透明的玻璃笛子组成，笛子又由长长的管子延续至一个保留了原貌的风箱。这些笛子 形成悬空的椭圆，在不同的高度层层排列，每一根笛子按照艺术家呼应建筑结构所创作的乐曲奏响一个音调。不断振动的音轨交错相交。</p><p>赛瑞斯·维恩·埃文斯（Cerith Wyn Evans，1958年，英国）在伦敦生活和工作。</p>",
+	"g2": "",
+	"g3": "<p>埃利亚松的作品好似一只沿着池塘边岩洞走廊的巨型万花筒，由43根粗细不一的三角棱柱组成。明亮的内部两面覆盖镜面，第三面覆盖黄色吹制玻璃镶嵌画。漫步于其中的来宾进入了一个无穷无尽的投影游戏。</p><p>奥拉弗尔·埃利亚松（Olafur Eliasson）在哥本哈根和柏林生活和工作。</p>"
+}
+
+
+var imgProArray = [
+	"/vstyle/imgs/gallery/g1.jpg",
+	"/vstyle/imgs/gallery/g2.jpg",
+	"/vstyle/imgs/gallery/g3.jpg",
+	"/vstyle/imgs/gallery/g4.jpg"
+];
+
+
+ // 当图片加载完成之后在添加进入页面            
+LoadFn(imgProArray , function (){
+	$("img").each(function(){ 
+            $(this).attr("src",$(this).attr("sourcesrc"));
+    })
+
+	colorify({
+	  container: 'colorify-lazy-reveal',
+	  attr: 'colorify', 
+	  accuracy: 20,
+	  color: true,
+	  gradient: true,
+	  gradientDirection: 'to top right',
+	  lazyReveal: {
+	   transition: 1.6, 
+	   delay: 0.4,
+	   steps: true
+	  }
+	});
+
+	var myScroll = new IScroll('#wrapp', { 
+	    preventDefault:false,
+	    click:iScrollClick(), //调用判断函数
+	    scrollbars: false, //有滚动条
+	    fixedScrollbar: true,
+	    momentum: true,
+	    useTransition: true
+	});
+       
+} , function (p){
+    console.log(p+"%");
+});
+
+
+
+
+$(".gallery li").click(function(){
+	var curIndex = $(this).index(),
+		curImgSrc = $(this).find("img").attr("src");
+	$("#galleryPhoto").attr("src", curImgSrc);
+	$(".imgInfo").fadeIn();
+
+	$("#g_intro").html(infoArr["g"+curIndex]);
+	
+})
+
+
+$(".backBtn").click(function(){
+	if($(".photoInfo").is(":hidden")){
+		$(".imgInfo").hide();
+	}else{
+		$(".photoInfo").hide();
+	}   
+})
+
+var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    mousewheelControl: true,
+    freeMode: true
+});
+
+$(".moreBtn").click(function(){
+	$(".photoInfo").fadeIn();
+	swiper.update();
+})
+
+</script>

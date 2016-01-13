@@ -7,14 +7,9 @@ class SiteController extends Controller
 	 * when an action is not explicitly requested by users.
 	 */
 
-	public function actionIndex_collection()
+	public function actionGallery()
 	{
-		$this->render('index_collection');
-	}
-
-	public function actionIndex_exhibition()
-	{
-		$this->render('index_exhibition');
+		$this->render('gallery');
 	}
 
 	public function actionCollection()
@@ -25,6 +20,21 @@ class SiteController extends Controller
 	public function actionExhibition()
 	{
 		$this->render('exhibition');
+	}
+
+	public function actionGallery_list()
+	{
+		$this->render('gallery_list');
+	}
+
+	public function actionCollection_list()
+	{
+		$this->render('collection_list');
+	}
+
+	public function actionExhibition_list()
+	{
+		$this->render('exhibition_list');
 	}
 
 	public function actionInfo()
