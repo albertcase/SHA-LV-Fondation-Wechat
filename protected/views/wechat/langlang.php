@@ -119,7 +119,7 @@
 
 
 
-	var audioSrc = ["/wechat/audio/langlang_LV_Foundation.aac","/wechat/audio/langlang_LV_Foundation.aac"];
+	var audioSrc = ["/wechat/audio/ring.mp3","/wechat/audio/langlang_LV_Foundation.aac"];
     var audio = document.createElement("audio");
     function audioFun(num){
         audio.src = audioSrc[num];
