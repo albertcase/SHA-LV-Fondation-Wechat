@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/jquery.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/PxLoader.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/iscroll.js"></script>
-    
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/public.js"></script>
     <script type="text/javascript">
     	var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>";
     </script>
@@ -33,7 +33,7 @@
 	</div>
 
 	<?php echo $content; ?>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/public.js"></script>
+
 
 <!-- 横屏代码 -->
 <div id="orientLayer" class="mod-orient-layer">
@@ -42,7 +42,7 @@
         <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
     </div>
 </div>
-
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/vstyle/js/share.js"></script>
 
 </body>
 </html>
