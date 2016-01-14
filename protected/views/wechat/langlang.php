@@ -83,6 +83,7 @@
 		$("#timing").show();
 
 		$(".telbtn span").addClass("connect").css({"background-color": "#d03035"});
+		$(".telbtn p").html("挂断");
 
 		var HH = 0;
 		var mm = 0;
