@@ -115,6 +115,7 @@
 		}else{
 			timingFun();
 			audioFun(1);
+			document.getElementById('audio1').play();
 		}
 	})
 
