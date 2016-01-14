@@ -16,6 +16,7 @@ var jssdkPushData = {
 ajaxfun("GET", "/weixin/jssdk", jssdkPushData, "json", jssdkCallback);
 
 function jssdkCallback(data){
+    alert(7)
     if(data.result == "success"){
         wechatShare(data.appid, data.time, data.noncestr, data.sign);
     }else{
