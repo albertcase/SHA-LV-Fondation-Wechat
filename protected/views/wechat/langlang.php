@@ -117,6 +117,7 @@
 			window.location.href = "qrcode";
 		}else{
 			timingFun();
+			document.getElementById('audio0').stop(); 
 			document.getElementById('audio1').play();   
 		}
 	})
