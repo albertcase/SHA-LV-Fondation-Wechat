@@ -38,6 +38,9 @@
 	</div>
 </div>
 
+<audio id="audio0" src="/wechat/audio/ring.mp3" autoplay loop ></audio>
+<audio id="audio1" src="/wechat/audio/langlang_LV_Foundation.aac" autoplay loop ></audio>
+
 <script type="text/javascript">
 	/* 图片加载 */
 	function LoadFn ( arr , fn , fn2){
@@ -72,7 +75,7 @@
 	        $(this).attr("src",$(this).attr("sourcesrc"));
 	    })
 	    $("#langlang").stop().animate({"opacity": 1}, 300);
-	    audioFun(0);	       
+	    document.getElementById('audio0').play();     
 	} , function (p){
 	    console.log(p+"%");
 	});
@@ -114,26 +117,11 @@
 			window.location.href = "qrcode";
 		}else{
 			timingFun();
-			audioFun(1);
-			document.getElementById('audio1').play();
+			document.getElementById('audio1').play();   
 		}
 	})
 
 
-
-
-	var audioSrc = ["/wechat/audio/ring.mp3","/wechat/audio/langlang_LV_Foundation.aac"];
-    var audio = document.createElement("audio");
-    function audioFun(num){
-        audio.src = audioSrc[num];
-        audio.autoplay = true; //设置是否自动播放
-        audio.loop = "loop";
-        // audio.addEventListener('ended', function () { //循环播放
-        //     audio.play();
-        // }, false);
-		document.body.appendChild(audio);
-		//document.getElementById("demo").innerHTML = "<b>注释：</b>IE 和 Safari 不支持 .ogg 文件格式。这只是一个例子。如需使其在所有浏览器中运行，您应该在 audio 元素中使用 source 元素。";
-    }
 
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
