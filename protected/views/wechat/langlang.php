@@ -38,8 +38,8 @@
 	</div>
 </div>
 
-<audio id="audio0" src="/wechat/audio/ring.mp3" autoplay loop ></audio>
-<audio id="audio1" src="/wechat/audio/langlang_LV_Foundation.aac" autoplay loop ></audio>
+<audio id="audio0" src="/wechat/audio/ring.mp3" loop ></audio>
+<audio id="audio1" src="/wechat/audio/langlang_LV_Foundation.aac" loop ></audio>
 
 <script type="text/javascript">
 	/* 图片加载 */
