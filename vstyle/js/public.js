@@ -45,7 +45,7 @@ var jssdkPushData = {
     "url": wechatUrl
 };
 
-ajaxfun("POST", "/weixin/jssdk", jssdkPushData, "json", jssdkCallback);
+ajaxfun("GET", "/weixin/jssdk", jssdkPushData, "json", jssdkCallback);
 
 function jssdkCallback(data){
     if(data.result == "success"){
