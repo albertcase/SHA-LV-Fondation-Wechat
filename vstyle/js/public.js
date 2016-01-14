@@ -60,8 +60,8 @@ function jssdkCallback(data){
 
 
 var shareData = {
-        title: '路易威登基金会',
-        desc: '路易威登基金会',
+        title: '路易威登基金会----',
+        desc: '路易威登基金会-----',
         link: window.location.host,
         imgUrl: 'http://' + window.location.host + '/imgs/share.jpg'
 };
