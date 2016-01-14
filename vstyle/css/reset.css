@@ -99,7 +99,7 @@ html, body{
 }
 #orientLayer { display: none; }
 @media screen and (min-aspect-ratio: 13/9) { 
-   /* #orientLayer { display: block; }*/ 
+    #orientLayer { display: block; } 
 }
 .mod-orient-layer { display: none; position: fixed; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; background: #000; z-index: 9997 }
 .mod-orient-layer__content { position: absolute; width: 100%; top: 45%; margin-top: -75px; text-align: center }
