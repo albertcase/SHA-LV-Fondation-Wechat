@@ -370,9 +370,9 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	padding: 0 0 0 3%;
 }
 
-/*.mirror{
+.mirror{
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
-}*/
+}
 
 .narrowIcon{
 	width: 12%;
