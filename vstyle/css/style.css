@@ -307,6 +307,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	font-size: 1.4rem;
 	width: 100%;
 	line-height: 1.8rem;
+	font-family: Arial;
 }
 
 .zoomArea{
@@ -360,7 +361,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	width: 14%;
 	position: absolute;
 	left: 6%;
-	top: -2%;
+	top: -1%;
 	z-index: 12;
 	background: url("../../vstyle/imgs/backBtn.png") no-repeat left center;
 	background-size: 16% auto;
@@ -386,7 +387,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 /* gallery */
 .gallerySlide{
 	width: 100%;
-	height: 80%;
+	height: 78%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -453,7 +454,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	width: 80%;
 	padding: 6% 0;
 	display: inline-block;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 .photoInfo_con{
@@ -514,8 +515,8 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	}
 
 	.workDetailed{
-		height: 86%;
-		top: 14.6%;
+		height: 88%;
+		top: 13%;
 	}
 
 }

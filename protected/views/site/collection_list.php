@@ -196,7 +196,7 @@ LoadFn(imgProArray , function (){
 
 	var myScroll = new IScroll('#wrapp', { 
 	    preventDefault:false,
-	    click:iScrollClick(), //调用判断函数
+	    //click:iScrollClick(), //调用判断函数
 	    scrollbars: false, //有滚动条
 	    fixedScrollbar: true,
 	    momentum: true,
