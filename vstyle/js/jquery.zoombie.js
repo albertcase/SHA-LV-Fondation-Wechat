@@ -41,6 +41,7 @@
             target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
             target.on("touchmove", setImage);
+            $(this).on("touchstart", setImage);
             $(this).on("touchmove", setImage);
 
             target.on("touchend", function(){
