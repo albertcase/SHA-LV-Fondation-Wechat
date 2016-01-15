@@ -361,6 +361,11 @@ html, body{
 	.navNode.operate_time table td:nth-child(2),.navNode.operate_time table td:nth-child(3){
 		width: 37.8%;
 	}
+
+	.bg{
+		width: 100%;
+		height: 100%;
+	}
 }
 
 /* 5s */
