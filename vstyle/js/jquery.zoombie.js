@@ -117,16 +117,12 @@
 
             $(".backBtn").click(function(){
 
-                if($(".photoInfo").is(":hidden")){
                     $(".imgInfo").hide();
                     $(".mirror").remove();
                     $(".zoomtips").show();
                     $(".introFooter").hide();
                     $(".zoomStatus").show();
                     $(".narrowIcon").hide();
-                }else{
-                    $(".photoInfo").hide();
-                } 
  
             })
         });

@@ -397,7 +397,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	margin: -6% 0 0 -6%;
 }
 
-.backBtn{
+.backBtn, .backBtn2{
 	width: 14%;
 	position: absolute;
 	left: 6%;

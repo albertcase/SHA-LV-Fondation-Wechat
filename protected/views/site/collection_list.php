@@ -6,10 +6,9 @@
 
 
 <div class="imgInfo workDetailed">
-		<a href="javascript:;" class="backBtn">
-			返回
-		</a>
+	
 		<div class="gallerySlide">
+			<a href="javascript:;" class="backBtn">返回</a>
 	    	<h1>-</h1>
 	    	<div class="zoomArea">
 	    		<img id="zoom" src="" sourcesrc="/vstyle/imgs/place.jpg" width='100%' />
@@ -26,6 +25,7 @@
     	</div>
 
     	<div class="photoInfo">
+    		<a href="javascript:;" class="backBtn2">返回</a>
                 <h2>
 					作品简介
 				</h2>
@@ -235,6 +235,9 @@ $(".moreBtn").click(function(){
 	swiper.onResize();
 })
 
+$(".backBtn2").click(function(){
+	$(".photoInfo").hide();
+})
 
 
 </script>
