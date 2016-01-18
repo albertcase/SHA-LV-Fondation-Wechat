@@ -148,10 +148,10 @@ $(".backBtn").click(function(){
 	}   
 })
 
-
+var swiper;
 $(".moreBtn").click(function(){
 	$(".photoInfo").fadeIn();
-	var swiper = new Swiper('.swiper-container', {
+	swiper = new Swiper('.swiper-container', {
 	    direction: 'vertical',
 	    slidesPerView: 'auto',
 	    mousewheelControl: true,

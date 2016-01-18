@@ -201,11 +201,11 @@ function detailedFun(obj){
 	}
 }
 
-
+var swiper;
 $(".moreBtn").click(function(){
 	$(".mirror").hide();
 	$(".photoInfo").show();
-	var swiper = new Swiper('.swiper-container', {
+	swiper = new Swiper('.swiper-container', {
 	    direction: 'vertical',
 	    slidesPerView: 'auto',
 	    mousewheelControl: true,
