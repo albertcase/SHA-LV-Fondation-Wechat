@@ -401,7 +401,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	width: 14%;
 	position: absolute;
 	left: 6%;
-	top: -1%;
+	top: -1px;
 	z-index: 12;
 	background: url("../../vstyle/imgs/backBtn.png") no-repeat left center;
 	background-size: 16% auto;
