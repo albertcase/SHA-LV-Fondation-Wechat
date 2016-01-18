@@ -22,9 +22,7 @@
 	    		</a>
 	    	</div>
 
-	    	<div class="zoomtips">
-	    		<img src="" sourcesrc="/vstyle/imgs/zoomtips.png" />
-	    	</div>
+	    	
     	</div>
 
     	<div class="photoInfo">
@@ -46,7 +44,9 @@
 			
 		</div>
 
-
+		<div class="zoomtips">
+    		<img src="" sourcesrc="/vstyle/imgs/zoomtips.png" />
+    	</div>
     	<div class="introFooter">
     		<a href="javascript:;" class="moreBtn">
     			<img src="" sourcesrc="/vstyle/imgs/moreBtn.png" />
