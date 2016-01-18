@@ -132,10 +132,9 @@ $(".gallery li").click(function(){
 	var curIndex = $(this).index(),
 		curImgSrc = $(this).find("img").attr("src");
 	$("#galleryPhoto").attr("src", curImgSrc);
-	
+	$(".imgInfo").show();
 
 	$("#g_intro").html(infoArr["g"+curIndex]);
-	$(".imgInfo").show();
 	
 })
 

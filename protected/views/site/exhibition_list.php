@@ -195,10 +195,10 @@ function detailedFun(obj){
 	var workPic = new Image();
 	workPic.src = "/vstyle/imgs/exhibition/big/" + curw + ".jpg";
 	workPic.onload = function(){
+		$(".imgInfo").show();
 		$(".workDetailed h1").html(curname);
 		$("#zoom").attr("src", "/vstyle/imgs/exhibition/big/" + curw + ".jpg").zoombieLens();
 		$("#g_intro").html(infoArr["e"+curw]);
-		$(".imgInfo").show();
 	}
 }
 
