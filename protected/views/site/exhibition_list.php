@@ -202,19 +202,22 @@ function detailedFun(obj){
 }
 
 
-var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    mousewheelControl: true,
-    freeMode: true
-});
-
 $(".moreBtn").click(function(){
+	$(".mirror").hide();
 	$(".photoInfo").show();
-	swiper.update();
+	
+	var swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    slidesPerView: 'auto',
+	    mousewheelControl: true,
+	    freeMode: true
+	});
+	swiper.onResize();
+
 })
 
 $(".backBtn2").click(function(){
+	$(".mirror").show();
 	$(".photoInfo").hide();
 })
 

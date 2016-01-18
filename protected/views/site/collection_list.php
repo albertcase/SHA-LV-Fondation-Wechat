@@ -225,6 +225,7 @@ function detailedFun(obj){
 
 
 $(".moreBtn").click(function(){
+	$(".mirror").hide();
 	$(".photoInfo").show();
 	
 	var swiper = new Swiper('.swiper-container', {
@@ -238,6 +239,7 @@ $(".moreBtn").click(function(){
 })
 
 $(".backBtn2").click(function(){
+	$(".mirror").show();
     $(".photoInfo").hide();
 })
 
