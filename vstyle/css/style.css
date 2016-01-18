@@ -520,7 +520,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	}
 
 	.zoomtips{
-		bottom: 0%;
+		bottom: -2%;
 	}
 
 }
