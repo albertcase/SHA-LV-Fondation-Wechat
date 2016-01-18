@@ -157,7 +157,7 @@ var swiper = new Swiper('.swiper-container', {
 
 $(".moreBtn").click(function(){
 	$(".photoInfo").fadeIn();
-	swiper.update();
+	swiper.updateContainerSize();
 })
 
 </script>

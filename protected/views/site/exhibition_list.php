@@ -201,18 +201,18 @@ function detailedFun(obj){
 	}
 }
 
-
-$(".moreBtn").click(function(){
-	$(".mirror").hide();
-	$(".photoInfo").show();
-	
-	var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container', {
 	    direction: 'vertical',
 	    slidesPerView: 'auto',
 	    mousewheelControl: true,
 	    freeMode: true
 	});
-	swiper.onResize();
+
+$(".moreBtn").click(function(){
+	$(".mirror").hide();
+	$(".photoInfo").show();
+	
+	swiper.updateContainerSize();
 
 })
 
