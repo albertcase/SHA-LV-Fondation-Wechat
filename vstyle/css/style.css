@@ -304,9 +304,9 @@ img.colorify:not(.all-loaded).all-not-loaded {
 }
 
 .imgInfo h1{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	width: 100%;
-	line-height: 1.8rem;
+	line-height: 2.0rem;
 	font-family: Arial;
 	font-weight: bold;
 }
