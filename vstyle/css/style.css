@@ -332,7 +332,8 @@ img.colorify:not(.all-loaded).all-not-loaded {
 .zoomtips{
 	width: 100%;
 	position: absolute;
-	bottom: 3%;
+	bottom: 5%;
+	z-index: 7;
 }
 
 .introFooter{
