@@ -311,6 +311,12 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	font-weight: bold;
 }
 
+.imgInfo h1 em{
+	width: 100%;
+	display: inline-block;
+	font-size: 1.6rem;
+}
+
 .zoomArea{
 	width: 100%;
 	display: inline-block;
