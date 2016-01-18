@@ -208,7 +208,7 @@ LoadFn(imgProArray , function (){
     console.log(p+"%");
 });
 
-
+var swiper;
 
 function detailedFun(obj){
 	var curw = obj.getAttribute("data-id");
@@ -216,6 +216,7 @@ function detailedFun(obj){
 	var workPic = new Image();
 	workPic.src = "/vstyle/imgs/collection/big/" + curw + ".jpg";
 	workPic.onload = function(){
+		swiper = null;
 		$(".imgInfo").show();
 		$(".workDetailed h1").html(curname);
 		$("#zoom").attr("src", "/vstyle/imgs/collection/big/" + curw + ".jpg").zoombieLens();
@@ -223,18 +224,16 @@ function detailedFun(obj){
 		swiper = new Swiper('.swiper-container', {
 		    direction: 'vertical',
 		    slidesPerView: 'auto',
-		    mousewheelControl: true,
 		    freeMode: true
 		});
 	}
 }
 
 
-var swiper;
+
 $(".moreBtn").click(function(){
 	$(".mirror").hide();
 	$(".photoInfo").show();
-	
 	swiper.onResize();
 
 })

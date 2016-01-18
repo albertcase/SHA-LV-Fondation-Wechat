@@ -128,14 +128,20 @@ LoadFn(imgProArray , function (){
 
 
 
-
+var swiper;
 $(".gallery li").click(function(){
+	swiper = null;
 	var curIndex = $(this).index(),
 		curImgSrc = $(this).find("img").attr("src");
 	$("#galleryPhoto").attr("src", curImgSrc);
 	$(".imgInfo").show();
 
 	$("#g_intro").html(infoArr["g"+curIndex]);
+	swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    slidesPerView: 'auto',
+	    freeMode: true
+	});
 	
 })
 
@@ -148,15 +154,10 @@ $(".backBtn").click(function(){
 	}   
 })
 
-var swiper;
+
 $(".moreBtn").click(function(){
 	$(".photoInfo").fadeIn();
-	swiper = new Swiper('.swiper-container', {
-	    direction: 'vertical',
-	    slidesPerView: 'auto',
-	    mousewheelControl: true,
-	    freeMode: true
-	});
+	
 
 	swiper.onResize();
 })
