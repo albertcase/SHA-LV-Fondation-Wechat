@@ -65,7 +65,7 @@
     		<ul>
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="曹斐，《陌生人》，2015 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="曹斐<br />《陌生人》，2015 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e1.jpg" width="100%" />
     			</li>
@@ -80,7 +80,7 @@
     			<li>
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="HU Xiangqian <br /> Speech at the edge of the world"></a>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="胡向前，《镜头前的女人》，2015 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="胡向前<br />《镜头前的女人》，2015 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e3.jpg" width="100%" />
     			</li>
@@ -104,7 +104,7 @@
     			<li>
     				<div class="pli_con">
     					<div class="lileft">
-    						<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="邱志杰，《地图》，2015 年"></a>
+    						<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="邱志杰<br />《地图》，2015 年"></a>
 	    					<a href="javascript:;" onclick="detailedFun(this)" data-id="10" data-name="XU-Qu-Currency <br /> Wars-Low"></a>
     					</div>
     					<div class="liright">

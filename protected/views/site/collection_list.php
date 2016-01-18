@@ -64,8 +64,8 @@
     		<ul>
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="曹斐，《人民城寨的生活》，2008 年"></a>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="2" data-name="曹斐，《人民城寨：“第二人生”（Second Life）城市规划项目》，2007 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="曹斐<br />《人民城寨的生活》，2008 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="2" data-name="曹斐<br />《人民城寨：“第二人生”（Second Life）城市规划项目》，2007 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c1.jpg" width="100%" />
     			</li>
@@ -73,20 +73,20 @@
     			<li>
     				<div class="pli_con">
     					<div class="lileft">
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="黄永砯，《圣吉尔之弓》，2015 年"></a>
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="5" data-name="伊萨克·朱利恩（ISAAC JULIEN），《浪》（Ten thousand waves），2010 年"></a>
+		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="黄永砯<br />《圣吉尔之弓》，2015 年"></a>
+		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="5" data-name="伊萨克·朱利恩（ISAAC JULIEN）<br />《浪》（Ten thousand waves），2010 年"></a>
 		    			</div>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="黄永砯，《 50 佛手》，1997 - 2013 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="黄永砯<br />《 50 佛手》，1997 - 2013 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c2.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="7" data-name="徐震，《新》，2013 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="7" data-name="徐震<br />《新》，2013 年"></a>
 	    				<div class="lileft">
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="6" data-name="陶辉，《德黑兰的黄昏》，2014 年"></a>
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="8" data-name="严培明，《天下乌鸦一般黑》，2012 年"></a>
+		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="6" data-name="陶辉<br />《德黑兰的黄昏》，2014 年"></a>
+		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="8" data-name="严培明<br />《天下乌鸦一般黑》，2012 年"></a>
 		    			</div>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c3.jpg" width="100%" />
@@ -94,38 +94,38 @@
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="杨福东，《彩色天空：新女性II》，2014 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="杨福东<br />《彩色天空：新女性II》，2014 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c4.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="10" data-name="张洹，《大跃进》，2007 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="10" data-name="张洹<br />《大跃进》，2007 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c5.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="11" data-name="张洹，《长岛佛》，2010 - 2011 年"></a>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="12" data-name="张洹，《突然的觉醒》，2006 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="11" data-name="张洹<br />《长岛佛》，2010 - 2011 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="12" data-name="张洹<br />《突然的觉醒》，2006 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c6.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="13" data-name="张洹，《国庆 1959 》，2009 年"></a>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="14" data-name="张晓刚，《我的理想》，2008 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="13" data-name="张洹<br />《国庆 1959 》，2009 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="14" data-name="张晓刚<br />《我的理想》，2008 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c7.jpg" width="100%" />
     			</li>
 
     			<li>
     				<div class="pli_con">
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="15" data-name="周涛，《鸡同鸭讲，猪同狗说》，2005 年"></a>
-	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="16" data-name="周涛，《一二三四》，2008 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="15" data-name="周涛<br />《鸡同鸭讲，猪同狗说》，2005 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="16" data-name="周涛<br />《一二三四》，2008 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c8.jpg" width="100%" />
     			</li>

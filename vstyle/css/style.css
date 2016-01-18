@@ -308,6 +308,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	width: 100%;
 	line-height: 1.8rem;
 	font-family: Arial;
+	font-weight: bold;
 }
 
 .zoomArea{
