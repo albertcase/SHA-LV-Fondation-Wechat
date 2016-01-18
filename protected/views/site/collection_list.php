@@ -220,6 +220,12 @@ function detailedFun(obj){
 		$(".workDetailed h1").html(curname);
 		$("#zoom").attr("src", "/vstyle/imgs/collection/big/" + curw + ".jpg").zoombieLens();
 		$("#g_intro").html(infoArr["c"+curw]);
+		swiper = new Swiper('.swiper-container', {
+		    direction: 'vertical',
+		    slidesPerView: 'auto',
+		    mousewheelControl: true,
+		    freeMode: true
+		});
 	}
 }
 
@@ -228,12 +234,7 @@ var swiper;
 $(".moreBtn").click(function(){
 	$(".mirror").hide();
 	$(".photoInfo").show();
-	swiper = new Swiper('.swiper-container', {
-	    direction: 'vertical',
-	    slidesPerView: 'auto',
-	    mousewheelControl: true,
-	    freeMode: true
-	});
+	
 	swiper.onResize();
 
 })
