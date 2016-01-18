@@ -158,7 +158,7 @@ $(".moreBtn").click(function(){
 	    freeMode: true
 	});
 
-	swiper.updateContainerSize();
+	swiper.update();
 })
 
 </script>

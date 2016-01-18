@@ -234,7 +234,7 @@ $(".moreBtn").click(function(){
 	    mousewheelControl: true,
 	    freeMode: true
 	});
-	swiper.updateContainerSize();
+	swiper.update();
 
 })
 
