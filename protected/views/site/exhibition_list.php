@@ -28,16 +28,8 @@
 					作品简介
 				</h2>
 
-				<div class="photoInfo_con">
-					<!-- Swiper -->
-				    <div class="swiper-container">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide" id="g_intro">
-
-					        </div>
-					        </div>
-
-					    </div>
+				<div class="photoInfo_con" id="g_intro">
+					
 				</div>
 			
 		</div>
@@ -194,18 +186,10 @@ function detailedFun(obj){
 	var workPic = new Image();
 	workPic.src = "/vstyle/imgs/exhibition/big/" + curw + ".jpg";
 	workPic.onload = function(){
-		swiper = null;
 		$(".imgInfo").show();
 		$(".workDetailed h1").html(curname);
 		$("#zoom").attr("src", "/vstyle/imgs/exhibition/big/" + curw + ".jpg").zoombieLens();
-		$("#g_intro").html(infoArr["e"+curw]);
-
-		swiper = new Swiper('.swiper-container', {
-		    direction: 'vertical',
-		    slidesPerView: 'auto',
-		    freeMode: true
-		});
-	}
+		$("#g_intro").html('<div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide">'+infoArr["e"+curw]+'</div></div></div>');		}
 }
 
 
@@ -213,13 +197,21 @@ $(".moreBtn").click(function(){
 	$(".mirror").hide();
 	$(".photoInfo").show();
 
-	swiper.onResize();
+	swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    slidesPerView: 'auto',
+	    autoHeight: 'true'
+	});
+	
+	swiper.update();
+	
 
 })
 
 $(".backBtn2").click(function(){
 	$(".mirror").show();
 	$(".photoInfo").hide();
+	swiper = null;
 })
 
 

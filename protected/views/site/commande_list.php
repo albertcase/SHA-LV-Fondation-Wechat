@@ -22,16 +22,8 @@
 							作品简介
 						</h2>
 
-						<div class="photoInfo_con">
-							<!-- Swiper -->
-						    <div class="swiper-container">
-						        <div class="swiper-wrapper">
-						            <div class="swiper-slide" id="g_intro">
-
-							        </div>
-							        </div>
-
-							    </div>
+						<div class="photoInfo_con" id="g_intro">
+	
 						</div>
 			
 		</div>
@@ -136,12 +128,7 @@ $(".gallery li").click(function(){
 	$("#galleryPhoto").attr("src", curImgSrc);
 	$(".imgInfo").show();
 
-	$("#g_intro").html(infoArr["g"+curIndex]);
-	swiper = new Swiper('.swiper-container', {
-	    direction: 'vertical',
-	    slidesPerView: 'auto',
-	    freeMode: true
-	});
+	$("#g_intro").html('<div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide">'+infoArr["g"+curIndex]+'</div></div></div>');	
 	
 })
 
@@ -158,8 +145,13 @@ $(".backBtn").click(function(){
 $(".moreBtn").click(function(){
 	$(".photoInfo").fadeIn();
 	
-
-	swiper.onResize();
+	swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    slidesPerView: 'auto',
+	    autoHeight: 'true'
+	});
+	
+	swiper.update();
 })
 
 </script>
