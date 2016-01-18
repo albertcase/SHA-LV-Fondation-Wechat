@@ -225,7 +225,8 @@ function detailedFun(obj){
 
 
 $(".moreBtn").click(function(){
-	$(".photoInfo").fadeIn();
+	$(".photoInfo").show();
+	
 	var swiper = new Swiper('.swiper-container', {
 	    direction: 'vertical',
 	    slidesPerView: 'auto',
@@ -233,10 +234,11 @@ $(".moreBtn").click(function(){
 	    freeMode: true
 	});
 	swiper.onResize();
+
 })
 
 $(".backBtn2").click(function(){
-	$(".photoInfo").hide();
+    $(".photoInfo").hide();
 })
 
 

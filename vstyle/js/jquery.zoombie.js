@@ -93,6 +93,7 @@
                     $(".zoomStatus").show();
                 }else {
                     target.fadeIn();
+
                     $(".zoomStatus").hide();
  
                     leftPos = String(((touch.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));

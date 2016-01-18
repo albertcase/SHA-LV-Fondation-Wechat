@@ -38,6 +38,7 @@
 
     	<div class="introFooter">
     		<a href="javascript:;" class="moreBtn">
+    			<span>更多<br />信息</span>
     			<img src="" sourcesrc="/vstyle/imgs/moreBtn.png" />
     		</a>
     	</div>
