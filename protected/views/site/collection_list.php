@@ -74,7 +74,7 @@
     				<div class="pli_con">
     					<div class="lileft">
 		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="<em>黄永砯</em>《圣吉尔之弓》，2015 年"></a>
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="5" data-name="<em>伊萨克·朱利恩（ISAAC JULIEN）</em>《浪》（Ten thousand waves），2010 年"></a>
+		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="5" data-name="<em>伊萨克·朱利恩<br />（ISAAC JULIEN）</em>《浪》（Ten thousand waves），2010 年"></a>
 		    			</div>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="<em>黄永砯</em>《 50 佛手》，1997 - 2013 年"></a>
 	    			</div>
