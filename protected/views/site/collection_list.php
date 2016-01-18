@@ -216,10 +216,11 @@ function detailedFun(obj){
 	var workPic = new Image();
 	workPic.src = "/vstyle/imgs/collection/big/" + curw + ".jpg";
 	workPic.onload = function(){
-		$(".imgInfo").fadeIn();
 		$(".workDetailed h1").html(curname);
 		$("#zoom").attr("src", "/vstyle/imgs/collection/big/" + curw + ".jpg").zoombieLens();
 		$("#g_intro").html(infoArr["c"+curw]);
+		$(".imgInfo").show();
+
 	}
 }
 
