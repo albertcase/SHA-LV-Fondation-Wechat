@@ -108,8 +108,8 @@ LoadFn(imgProArray , function (){
 	  gradient: true,
 	  gradientDirection: 'to top right',
 	  lazyReveal: {
-	   transition: 1.6, 
-	   delay: 0.4,
+	   transition: 0.6, 
+	   delay: 0.2,
 	   steps: true
 	  }
 	});
