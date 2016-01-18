@@ -315,6 +315,8 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	width: 100%;
 	display: inline-block;
 	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 0 0 2% 0;
 }
 
 .zoomArea{
