@@ -52,19 +52,19 @@
 
     		<ul>
     			<li>
-	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g1.jpg" width="100%" />
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/commande/g1.jpg" width="100%" />
     			</li>
 
     			<li>
-	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g2.jpg" width="100%" />
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/commande/g2.jpg" width="100%" />
     			</li>
 
     			<li>
-	    			<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g3.jpg" width="100%" />
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/commande/g3.jpg" width="100%" />
     			</li>
 
     			<li>
-	    				<img colorify src="" sourcesrc="/vstyle/imgs/gallery/g4.jpg" width="100%" />
+	    				<img colorify src="" sourcesrc="/vstyle/imgs/commande/g4.jpg" width="100%" />
     			</li>
     		</ul>
 			
@@ -86,10 +86,10 @@ var infoArr = {
 
 
 var imgProArray = [
-	"/vstyle/imgs/gallery/g1.jpg",
-	"/vstyle/imgs/gallery/g2.jpg",
-	"/vstyle/imgs/gallery/g3.jpg",
-	"/vstyle/imgs/gallery/g4.jpg"
+	"/vstyle/imgs/commande/g1.jpg",
+	"/vstyle/imgs/commande/g2.jpg",
+	"/vstyle/imgs/commande/g3.jpg",
+	"/vstyle/imgs/commande/g4.jpg"
 ];
 
 

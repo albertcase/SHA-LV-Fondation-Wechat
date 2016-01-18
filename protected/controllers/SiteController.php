@@ -17,14 +17,19 @@ class SiteController extends Controller
 		$this->render('collection');
 	}
 
+	public function actionCommande()
+	{
+		$this->render('commande');
+	}
+
 	public function actionExhibition()
 	{
 		$this->render('exhibition');
 	}
 
-	public function actionGallery_list()
+	public function actionCommande_list()
 	{
-		$this->render('gallery_list');
+		$this->render('commande_list');
 	}
 
 	public function actionCollection_list()
