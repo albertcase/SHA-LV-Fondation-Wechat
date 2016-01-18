@@ -148,15 +148,16 @@ $(".backBtn").click(function(){
 	}   
 })
 
-var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    mousewheelControl: true,
-    freeMode: true
-});
 
 $(".moreBtn").click(function(){
 	$(".photoInfo").fadeIn();
+	var swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    slidesPerView: 'auto',
+	    mousewheelControl: true,
+	    freeMode: true
+	});
+
 	swiper.updateContainerSize();
 })
 
