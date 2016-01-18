@@ -212,7 +212,7 @@ $(".moreBtn").click(function(){
 	    freeMode: true
 	});
 
-	swiper.update();
+	swiper.onResize();
 
 })
 
