@@ -223,17 +223,17 @@ function detailedFun(obj){
 	}
 }
 
-var swiper = new Swiper('.swiper-container', {
+
+
+$(".moreBtn").click(function(){
+	$(".mirror").hide();
+	$(".photoInfo").show();
+	var swiper = new Swiper('.swiper-container', {
 	    direction: 'vertical',
 	    slidesPerView: 'auto',
 	    mousewheelControl: true,
 	    freeMode: true
 	});
-
-$(".moreBtn").click(function(){
-	$(".mirror").hide();
-	$(".photoInfo").show();
-	
 	swiper.updateContainerSize();
 
 })
