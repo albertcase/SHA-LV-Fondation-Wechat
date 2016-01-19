@@ -411,8 +411,6 @@ img.colorify:not(.all-loaded).all-not-loaded {
 }
 
 .mirror{
-	background: blue;
-	opacity: 0.6;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
 	overflow: hidden;
 }
