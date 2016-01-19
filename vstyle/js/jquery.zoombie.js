@@ -12,8 +12,6 @@
             lensCss: 'mirror'
         };
         var options = $.extend(defaults, options);
-        var lensType_frame = "width: " + String(options.Size) + "px;height: " + String(options.Size)
-            + "px;float: left;display: none;position: absolute;z-index:9;";
 
         var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
             + "px;float: left;display: inline-block;";
@@ -26,7 +24,7 @@
 
             // Creating lens
             
-            $("<div class='mirror_con' style='" + lensType_frame + "'><div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div></div>").appendTo($(this).parent());
+            $("<div class='mirror_con'><div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div></div>").appendTo($(this).parent());
             
             var target_frame = $(".mirror_con");
             var target = $("."+options.lensCss);
