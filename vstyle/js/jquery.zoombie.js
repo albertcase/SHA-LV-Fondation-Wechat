@@ -45,7 +45,7 @@
                 heightRatio = $(this).height() / obj.height();
             }).appendTo($(this).parent());
 
-            target.css({ backgroundImage: "url('" + imageSrc + "')" });
+            //target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
             target.on("touchmove", setImage);
             $(this).on("touchstart", setImage);
