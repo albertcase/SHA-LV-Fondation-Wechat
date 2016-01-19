@@ -16,7 +16,7 @@
             + "px;float: left;display: none;overflow:hidden;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;position: absolute;z-index:9;";
-
+        alert( String(options.Size / 2 + options.borderSize));
         return this.each(function () {
             obj = $(this);
 
