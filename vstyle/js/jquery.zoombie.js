@@ -101,7 +101,7 @@
                     leftPos = String(((touch.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
                     topPos = String(((touch.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
 
-                    //target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     // if(leftPos * (-1) >= 0 && leftPos * (-1) <= target.width()*2 - target.offset().left*2){
                     //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     // }
@@ -113,6 +113,7 @@
                     leftPos = String(touch.pageX - target.width() / 2);
                     topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - Math.floor(offset.top));
                     target.css({ left: leftPos + 'px', top: topPos + 'px' });
+                    $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px", "overflow": "hidden" });
                     //target.css({ left: '50%', top: '50%', "margin-top": -parseInt(options.Size/2), "margin-left": -parseInt(options.Size/2) });
                 }
             }
