@@ -101,7 +101,7 @@
                     leftPos = String(((touch.pageX - offset.left) * widthRatio - target.width() / 2) * (-1));
                     topPos = String(((touch.pageY - offset.top) * heightRatio - target.height() / 2) * (-1));
 
-                    target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
+                    //target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     // if(leftPos * (-1) >= 0 && leftPos * (-1) <= target.width()*2 - target.offset().left*2){
                     //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     // }
