@@ -411,8 +411,6 @@ img.colorify:not(.all-loaded).all-not-loaded {
 }
 
 .mirror{
-	border-radius: 135px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
 	overflow: hidden;
 }
 
@@ -424,6 +422,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	background: blue;
 	display: none;
 	position: absolute;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
 	z-index:9;
 }
 
