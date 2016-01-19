@@ -492,7 +492,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	left: 0;
 	top: 0;
 	background: #fff;
-	z-index: 6;
+	z-index: 7;
 	font-family: "黑体";
 	display: none;
 }
