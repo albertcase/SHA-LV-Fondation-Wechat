@@ -173,6 +173,8 @@ LoadFn(imgProArray , function (){
             $(this).attr("src",$(this).attr("sourcesrc"));
     })
 
+    $("#home").show();
+
 	colorify({
 	  container: 'colorify-lazy-reveal',
 	  attr: 'colorify', 
@@ -225,7 +227,7 @@ $(".moreBtn").click(function(){
 	    slidesPerView: 'auto',
 	    autoHeight: 'true'
 	});
-	
+
 	swiper.update();
 	
 

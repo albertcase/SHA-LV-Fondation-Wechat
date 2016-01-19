@@ -92,6 +92,8 @@ LoadFn(imgProArray , function (){
             $(this).attr("src",$(this).attr("sourcesrc"));
     })
 
+    $("#home").show();
+
 	colorify({
 	  container: 'colorify-lazy-reveal',
 	  attr: 'colorify', 
