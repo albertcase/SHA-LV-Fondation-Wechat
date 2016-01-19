@@ -92,7 +92,7 @@
                     target.hide();
                     $(".zoomStatus").show();
                 }else {
-                    target.fadeIn();
+                    target.show();
 
                     $(".zoomStatus").hide();
  
