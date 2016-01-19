@@ -16,7 +16,8 @@
             + "px;float: left;display: none;overflow:hidden;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;position: absolute;z-index:9;";
-        alert( String(options.Size / 2 + options.borderSize));
+        $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px" });
+        
         return this.each(function () {
             obj = $(this);
 
@@ -38,7 +39,7 @@
                 heightRatio = $(this).height() / obj.height();
             }).appendTo($(this).parent());
 
-            target.css({ backgroundImage: "url('" + imageSrc + "')", "border-radius": String(options.Size / 2 + options.borderSize) + "px" });
+            target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
             target.on("touchmove", setImage);
             $(this).on("touchstart", setImage);
