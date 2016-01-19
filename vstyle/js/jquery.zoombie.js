@@ -40,7 +40,7 @@
                 heightRatio = $(this).height() / obj.height();
             }).appendTo($(this).parent());
 
-            //target.css({ backgroundImage: "url('" + imageSrc + "')" });
+            target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
             target.on("touchmove", setImage);
             $(this).on("touchstart", setImage);
@@ -113,7 +113,6 @@
                     leftPos = String(touch.pageX - target.width() / 2);
                     topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - Math.floor(offset.top));
                     target.css({ left: leftPos + 'px', top: topPos + 'px' });
-                    $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px", "overflow": "hidden" });
                     //target.css({ left: '50%', top: '50%', "margin-top": -parseInt(options.Size/2), "margin-left": -parseInt(options.Size/2) });
                 }
             }
