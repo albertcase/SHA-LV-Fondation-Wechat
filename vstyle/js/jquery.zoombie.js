@@ -16,7 +16,7 @@
             + "px;float: left;display: none;position: absolute;z-index:9;";
 
         var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
-            + "px;float: left;display: inline-block;left:0;top:0;position: absolute;z-index:9;";
+            + "px;float: left;display: inline-block;";
         
 
         return this.each(function () {
@@ -45,7 +45,7 @@
                 heightRatio = $(this).height() / obj.height();
             }).appendTo($(this).parent());
 
-            //target.css({ backgroundImage: "url('" + imageSrc + "')" });
+            target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
             target.on("touchmove", setImage);
             $(this).on("touchstart", setImage);
