@@ -415,9 +415,9 @@ img.colorify:not(.all-loaded).all-not-loaded {
 }
 
 .mirror_con{
-	width: 220px;
-	height: 220px;
-	border-radius: 220px;
+	width: 160px;
+	height: 160px;
+	border-radius: 160px;
 	overflow: hidden;
 	background: blue;
 	display: none;
