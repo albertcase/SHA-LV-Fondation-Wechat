@@ -13,11 +13,11 @@
         };
         var options = $.extend(defaults, options);
         var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
-            + "px;float: left;display: none;overflow:hidden;border: " + String(options.borderSize) + "px solid " + options.borderColor
+            + "px;float: left;display: none;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;position: absolute;z-index:9;";
-        $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px" });
-        
+        $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px", "overflow": "hidden" });
+
         return this.each(function () {
             obj = $(this);
 
