@@ -411,18 +411,9 @@ img.colorify:not(.all-loaded).all-not-loaded {
 }
 
 .mirror{
-	overflow: hidden;
-}
-
-.mirror_con{
-	width: 270px;
-	height: 270px;
-	border-radius: 270px;
-	overflow: hidden;
-	display: none;
-	position: absolute;
+	border-radius: 135px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1) inset;
-	z-index:9;
+	overflow: hidden;
 }
 
 .narrowIcon{

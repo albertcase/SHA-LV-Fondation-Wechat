@@ -12,10 +12,10 @@
             lensCss: 'mirror'
         };
         var options = $.extend(defaults, options);
-
         var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
-            + "px;float: left;display: inline-block;";
-        
+            + "px;float: left;display: none;overflow:hidden;border: " + String(options.borderSize) + "px solid " + options.borderColor
+            + ";background-repeat: no-repeat;border-radius: " + String(options.Size / 2 + options.borderSize)
+            + "px;position: absolute;z-index:9;";
 
         return this.each(function () {
             obj = $(this);
@@ -23,12 +23,7 @@
             var offset = $(this).offset();
 
             // Creating lens
-            
-            $("<div class='mirror_con'><div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div></div>").appendTo($(this).parent());
-            
-            var target_frame = $(".mirror_con");
-            var target = $("."+options.lensCss);
-
+            var target = $("<div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
             var targetSize = target.size();
 
             // Calculating actual size of image
@@ -52,7 +47,7 @@
             target.on("touchend", function(){
                 //target.hide();
                 //console.log(target.css("display"));
-                if(target_frame.css("display") != "none"){
+                if(target.css("display") != "none"){
                     $(".narrowIcon").show();
                 }else{
                     $(".zoomStatus").show();
@@ -61,7 +56,7 @@
             $(this).on("touchend", function(){
                 //target.hide();
                 //console.log(target.css("display"));
-                if(target_frame.css("display") != "none"){
+                if(target.css("display") != "none"){
                     $(".narrowIcon").show();
                 }else{
                     $(".zoomStatus").show();
@@ -76,7 +71,7 @@
 
             $(".narrowIcon").on("touchstart", function(){
                 $(this).hide();
-                target_frame.hide();
+                target.hide();
                 $(".zoomStatus").show();
             });
 
@@ -94,10 +89,10 @@
                 var topPos = parseInt(touch.pageY - offset.top);
 
                 if (leftPos < 0 || topPos < 0 || leftPos > obj.width() || topPos > obj.height()) {
-                    target_frame.hide();
+                    target.hide();
                     $(".zoomStatus").show();
                 }else {
-                    target_frame.show();
+                    target.show();
 
                     $(".zoomStatus").hide();
  
@@ -115,7 +110,7 @@
                     
                     leftPos = String(touch.pageX - target.width() / 2);
                     topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - Math.floor(offset.top));
-                    target_frame.css({ left: leftPos + 'px', top: topPos + 'px' });
+                    target.css({ left: leftPos + 'px', top: topPos + 'px' });
                     //target.css({ left: '50%', top: '50%', "margin-top": -parseInt(options.Size/2), "margin-left": -parseInt(options.Size/2) });
                 }
             }
