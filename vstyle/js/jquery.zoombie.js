@@ -13,7 +13,7 @@
         };
         var options = $.extend(defaults, options);
         var lensType = "background-color:#fff;background-position: 0px 0px;width: " + String(options.Size) + "px;height: " + String(options.Size)
-            + "px;float: left;display: none;border-radius: " + String(options.Size / 2 + options.borderSize)
+            + "px;float: left;display: none;overflow:hidden;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;position: absolute;z-index:9;";
 
