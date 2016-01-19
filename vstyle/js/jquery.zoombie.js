@@ -108,9 +108,8 @@
                     //     target.css({ backgroundPosition: leftPos + 'px ' + topPos + 'px' });
                     // }
                     
-
                     leftPos = String(touch.pageX - target.width() / 2);
-                    topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - offset.top);
+                    topPos = String(touch.pageY - target.height() / 2 + parseInt(obj.css("margin-top")) - Math.floor(offset.top));
                     target.css({ left: leftPos + 'px', top: topPos + 'px' });
                     //target.css({ left: '50%', top: '50%', "margin-top": -parseInt(options.Size/2), "margin-left": -parseInt(options.Size/2) });
                 }
