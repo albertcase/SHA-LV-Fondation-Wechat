@@ -346,6 +346,7 @@ img.colorify:not(.all-loaded).all-not-loaded {
 	bottom: 5%;
 	left: 0;
 	display: none;
+	z-index: 9;
 }
 
 .zoomtips img{
