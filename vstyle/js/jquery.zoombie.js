@@ -6,7 +6,7 @@
     $.fn.zoombieLens = function (options) {
 
         var defaults = {
-            Size: 170,
+            Size: 270,
             borderSize: 0,
             borderColor: "#888",
             lensCss: 'mirror'
