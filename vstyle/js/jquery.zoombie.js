@@ -16,7 +16,7 @@
             + "px;float: left;display: none;border: " + String(options.borderSize) + "px solid " + options.borderColor
             + ";background-repeat: no-repeat;border-radius: " + String(options.Size / 2 + options.borderSize)
             + "px;position: absolute;z-index:9;";
-        $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px", "overflow": "hidden" });
+        
 
         return this.each(function () {
             obj = $(this);
@@ -25,6 +25,7 @@
 
             // Creating lens
             var target = $("<div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
+            $(".mirror").css({ "border-radius": String(options.Size / 2 + options.borderSize) + "px", "overflow": "hidden" });
             var targetSize = target.size();
 
             // Calculating actual size of image
