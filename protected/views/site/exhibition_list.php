@@ -99,7 +99,7 @@
 	    					<a href="javascript:;" onclick="detailedFun(this)" data-id="10" data-name="<em>徐渠</em>《货币战争》,2015 年"></a>
     					</div>
     					<div class="liright">
-    						<a href="javascript:;" onclick="detailedFun(this)" data-id="11" data-name="<em>陶辉</em>，《一个人物与七段素材》，2015 年"></a>
+    						<a href="javascript:;" onclick="detailedFun(this)" data-id="11" data-name="<em>陶辉</em>《一个人物与七段素材》，2015 年"></a>
 	    					<a href="javascript:;" onclick="detailedFun(this)" data-id="12" data-name="<em>徐震</em>《意识形状》，2011 年"></a>
     					</div>
 	    				
