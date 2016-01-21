@@ -28,7 +28,7 @@
 
             // Calculating actual size of image
             var imageSrc = options.imageSrc ? options.imageSrc : $(this).attr("src");
-            
+
             var imageTag = new Image();
                 imageTag.src = imageSrc;
 
@@ -40,7 +40,6 @@
                 widthRatio = this.width / obj.width();
                 heightRatio = this.height / obj.height();
             }
-
 
             target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
