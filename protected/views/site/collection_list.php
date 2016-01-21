@@ -134,6 +134,12 @@
 
 
 <script type="text/javascript">
+var shareData = {
+        title: '探索路易威登基金会“系列展·中国当代艺术家作品精选”',
+        desc: '探索路易威登基金会“系列展·中国当代艺术家作品精选”',
+        link: window.location.host + "/site/collection",
+        imgUrl: 'http://' + window.location.host + '/vstyle/imgs/collection_share.jpg'
+};
 
 var infoArr = {
 	"c1": "<p><b>曹斐，《人民城寨的生活》，2008 年</b></p><p>在“人民城寨”中，作为艺术家化身的“中国翠西”既是参与者，又是向导和旅游者。她带领着儿子“中国太阳”在将过去、现在和未来相结合，游走于现实和虚拟之间的梦幻之旅中，围绕性、欢庆、政治、创意、信仰、生与死等重大或较为轻松的问题探索了这个平台的原则。</p>",

@@ -11,6 +11,15 @@
 
 
 <script type="text/javascript">
+
+var shareData = {
+        title: '探索路易威登基金会尊享藏品，对话弗兰克·盖里立梦建筑”',
+        desc: '探索路易威登基金会尊享藏品，对话弗兰克·盖里立梦建筑”',
+        link: window.location.host + "/site/commande",
+        imgUrl: 'http://' + window.location.host + '/vstyle/imgs/commande_share.jpg'
+};
+
+
 $("body").attr("id", "index");
 
 

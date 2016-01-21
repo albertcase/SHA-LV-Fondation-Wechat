@@ -11,6 +11,15 @@
 
 
 <script type="text/javascript">
+var shareData = {
+        title: '探索路易威登基金会“系列展·中国当代艺术家作品精选”',
+        desc: '探索路易威登基金会“系列展·中国当代艺术家作品精选”',
+        link: window.location.host + "/site/collection",
+        imgUrl: 'http://' + window.location.host + '/vstyle/imgs/collection_share.jpg'
+};
+
+
+
 $("body").attr("id", "index");
 
 
@@ -37,11 +46,6 @@ LoadFn(imgProArray , function (){
 } , function (p){
     console.log(p+"%");
 });
-
-
-
-
-
 
 
 
