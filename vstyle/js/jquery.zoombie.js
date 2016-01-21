@@ -28,15 +28,19 @@
 
             // Calculating actual size of image
             var imageSrc = options.imageSrc ? options.imageSrc : $(this).attr("src");
-            var imageTag = "<img style='display:none;' src='" + imageSrc + "' />";
+            
+            var imageTag = new Image();
+                imageTag.src = imageSrc;
 
             var widthRatio = 0;
             var heightRatio = 0;
 
-            $(imageTag).load(function () {
-                widthRatio = $(this).width() / obj.width();
-                heightRatio = $(this).height() / obj.height();
-            }).appendTo($(this).parent());
+            imageTag.onload = function(){
+                console.log(this.width);
+                widthRatio = this.width / obj.width();
+                heightRatio = this.height / obj.height();
+            }
+
 
             target.css({ backgroundImage: "url('" + imageSrc + "')" });
 
