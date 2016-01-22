@@ -202,7 +202,7 @@ function detailedFun(obj){
 
 
 $(".moreBtn").click(function(){
-	$(".mirror").hide();
+	$(".mirror,.narrowIcon").hide();
 	$(".photoInfo").show();
 
 	swiper = new Swiper('.swiper-container', {
