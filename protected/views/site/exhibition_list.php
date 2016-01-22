@@ -54,21 +54,21 @@
     	<div class="page photo" colorify-lazy-reveal id="exhibition">
 
     		<ul>
-    			<li>
+    			<li class="e1">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="<em>曹斐</em>《陌生人》，2015 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e1.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="e2">
     				<div class="pli_con">
     					<a href="javascript:;" onclick="detailedFun(this)" data-id="2" data-name="<em>郝量</em>《此君——由仙通鬼》，2015 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e2.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="e3">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="<em>胡向前<em>《土尾世界的演讲》，2013 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="4" data-name="<em>胡向前</em>《镜头前的女人》，2015 年"></a>
@@ -76,7 +76,7 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e3.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="e4">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="5" data-name="<em>刘窗</em>《BBR 1  (NO.1 OF BLOSSOM BUD RESTRAINER) 》（抑花一号），2015年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="6" data-name="<em>刘诗园</em>《从幸福到别的一切》，2015 年"></a>
@@ -84,7 +84,14 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e4.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="e5">
+    				<div class="pli_con">
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="13" data-name="<em>刘韡</em>《无题》"></a>
+	    			</div>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e7.jpg" width="100%" />
+    			</li>
+
+    			<li class="e6">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="7" data-name="<em>刘韡</em>《 Liberation No.16 》（解放），2014 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="8" data-name="<em>刘小东</em>《肋骨弯了》，2010 年"></a>
@@ -92,7 +99,14 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e5.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="e7">
+    				<div class="pli_con">
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="14" data-name="<em>刘小东</em>《金城机场》，2010 年"></a>
+	    			</div>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e8.jpg" width="100%" />
+    			</li>
+
+    			<li class="e8">
     				<div class="pli_con">
     					<div class="lileft">
     						<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="<em>邱志杰</em>《地图》，2015 年"></a>
@@ -105,6 +119,14 @@
 	    				
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e6.jpg" width="100%" />
+    			</li>
+
+    			<li class="e9">
+    				<div class="pli_con">
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="15" data-name="<em>杨福东</em>《青·麒麟／山东纪事》，2008 - 2015 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="16" data-name="<em>徐震</em>《永生 — 马拉松的士兵宣布胜利, 受伤的迦拉太人》"></a>
+	    			</div>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/exhibition/e9.jpg" width="100%" />
     			</li>
 
     		</ul>
@@ -137,7 +159,11 @@ var infoArr = {
 	"e9": "<p><b>邱志杰，《地图》，2015 年</b></p><p>自 2012 年起，邱志杰创作了体现当代社会各种地域、各种事件和各种现象的水墨地图。他在基金会绘制了一幅地图壁画，超越之前一切作品，如二十一世纪地图、乌托邦地图、总体艺术地图、中国历史地图、长江地图。在上述作品中，阡陌纵横，河川九曲回肠，各种联系与关联为我们提供了看待历史的全新视角。地图是艺术家思想活跃的体现，说明他乐于设计出向不同方向拓展的道路。 </p><p>地图属于一种 “总体艺术” 实践，“总体艺术” 是邱志杰于 2003 年开创的艺术形式，在西方语言中译为 “Art Total”。艺术家认为，艺术创作不可将其历史和文化背景排除在外，因此他并不拘泥于艺术形式，而是将社会学、人类学、哲学、心理学和其他人文学科包括在内。他经常使用“关联艺术”（Art Connecté）一词，强调艺术属于日常生活的一部分，旨在将个人行为与社会责任联系在一起，邀请观众缔造自己的关系与关联。</p>",
 	"e10": "<p><b>徐渠,《货币战争》,2015 年</b></p><p>徐渠于 2010 年代开始在国际艺术界崛起，通过自己的画作、装置和视频探索全球化世界之现实。这就是 《货币战争》 系列画作的由来。艺术家在作品中展示了全球经济战争，并单独呈现了某些国际货币之细节，创作出色彩缤纷的几何抽象构图。这些双面画作安装在带小轮的框架上，展现了货币的双面特色：一面整洁干净，体现 1960 年代的全新货币和几何抽象；另一面则相对混乱模糊，暗示货币破旧毁坏，更具情感内涵。这些可以活动的画作象征着从一个市场至另一市场的资金流动和资本动向，及其对艺术领域产生日益强大的影响。</p>",
 	"e11": "<p><b>陶辉，《一个人物与七段素材》，2015 年</b></p><p>这件作品从经典纪录片极具感情色彩的叙述汲取灵感，将在录音棚中录制的喃喃自语与投影在类似空客飞机内部结构的布景中不协调的七段童话场景相结合。</p>",
-	"e12": "<p><b>徐震，《意识形状》，2011 年</b></p><p>徐震和没顶公司 （Madein） 将宗教和文化传统中经常出现的手势、姿势和动作，以近似瑜伽的一系列软体操重新展现出来。艺术家以充满趣味的方式总结了博物馆学和艺术史的新近趋势，从布朗利码头博物馆 （Musée du Quai Branly） 重新将视为 “原始” 的旧物展览模式重新概念化，到 Roger Bentu Xu Buergel 将美学理念视为主题，以及 Ruth Noack 于 2007 年举办的 《Documenta 12》 展览，同时还涉及史学中略有偏移的现代主义，以及非西方的系谱研究。</p>"
+	"e12": "<p><b>徐震，《意识形状》，2011 年</b></p><p>徐震和没顶公司 （Madein） 将宗教和文化传统中经常出现的手势、姿势和动作，以近似瑜伽的一系列软体操重新展现出来。艺术家以充满趣味的方式总结了博物馆学和艺术史的新近趋势，从布朗利码头博物馆 （Musée du Quai Branly） 重新将视为 “原始” 的旧物展览模式重新概念化，到 Roger Bentu Xu Buergel 将美学理念视为主题，以及 Ruth Noack 于 2007 年举办的 《Documenta 12》 展览，同时还涉及史学中略有偏移的现代主义，以及非西方的系谱研究。</p>",
+	"e13": "<p><b>刘韡，《无题》</b></p><p>如果说刘韡在某种程度上对某种形式的粗劣现实，即意识的现实作出让步，这并非为了重现世界，而是直接体现构成这一世界的材质的重要性。最近，他对这个世界上相互联系且整齐划一的设备产生了兴趣：以确切而可感知的方式讲述全球化的集装箱、管道、砖块和其他普通材质：尤其是他的作品 《谜中谜》 将球体作为理想形式的参照物，测量和重新设置胶合板和标准化投递箱。</p>",
+	"e14": "<p><b>刘小东，《金城机场》，2010 年</b></p><p> 在与欣欣向荣，不断进步的当今中国截然相反的金城，刘小东以一直以来似乎从未改变的祖屋、家人、童年好友为主题创作了一系列画作，这些是他三十多年来创作画作反复运用的主题。通过这一系列作品，他讲述了那些离开小村镇前往大城市生活的中国人，在全新环境下看到了发展，同时也面临困难和误解，随后在这些不同现实之间建立了距离。</p>", 
+	"e15": "<p><b>杨福东,《青·麒麟／山东纪事》，2008 - 2015 年</b></p><p>杨福东从 1990 年代末开始拍摄照片、电影和制作装置，反映复杂纷呈的当代中国社会。他的作品具有两大风格特色，一种是隽永而梦幻的虚拟，另一种则是如纪录片般的纪实。《青·麒麟／山东纪事》 是一件多屏幕浸入式装置，以黑白画面讲述了山东省风景的改变与退化。艺术家在视频中拍摄了在采石场工作的工人，他们将具有千年历史的石材开采出来，随后加工成不同风格的雕像，通常为媚俗的仿古装饰品。《青·麒麟／山东纪事》 也可视为对在某一地点某一人群进行的一种无休无止的努力的描述。</p>",
+	"e16": "<p><b>徐震，《永生 — 马拉松的士兵宣布胜利, 受伤的迦拉太人》</b></p><p>这件作品将让 － 皮埃尔•科尔托 （Jean-Pierre Cortot） 的 《马拉松的士兵宣布胜利》 （1834 年）置于 《受伤的迦拉太人》（公元前 1-2 世纪）之上。事实上，这两件作品皆源自卢浮宫珍藏，而这种组合则出自一位中国艺术家之手并为法国机构和公众而创作，以充满趣味的手法体现了在一个交流可从不同渠道展开，并遵循不同方向的时代下新文化出现的可能性。 </p>"
 }
 
 
@@ -147,7 +173,10 @@ var imgProArray = [
 	"/vstyle/imgs/exhibition/e3.jpg",
 	"/vstyle/imgs/exhibition/e4.jpg",
 	"/vstyle/imgs/exhibition/e5.jpg",
-	"/vstyle/imgs/exhibition/e6.jpg"
+	"/vstyle/imgs/exhibition/e6.jpg",
+	"/vstyle/imgs/exhibition/e7.jpg",
+	"/vstyle/imgs/exhibition/e8.jpg",
+	"/vstyle/imgs/exhibition/e9.jpg"
 ];
 
 

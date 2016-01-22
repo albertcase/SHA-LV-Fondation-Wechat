@@ -55,7 +55,14 @@
     	<div class="page photo" colorify-lazy-reveal id="home">
 
     		<ul>
-    			<li>
+    			<li class="c1">
+    				<div class="pli_con">
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="17" data-name="<em>艾未未</em>《树》，2010年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="18" data-name="<em>曹斐</em>《谁的乌托邦》，2006年"></a>
+	    			</div>
+    				<img colorify src="" sourcesrc="/vstyle/imgs/collection/c9.jpg" width="100%" />
+    			</li>
+    			<li class="c2">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="1" data-name="<em>曹斐</em>《人民城寨的生活》，2008 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="2" data-name="<em>曹斐</em>《人民城寨：“第二人生”（Second Life）城市规划项目》，2007 年"></a>
@@ -63,7 +70,7 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c1.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c3">
     				<div class="pli_con">
     					<div class="lileft">
 		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="3" data-name="<em>黄永砯</em>《圣吉尔之弓》，2015 年"></a>
@@ -74,32 +81,37 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c2.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c4">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="7" data-name="<em>徐震</em>《新》，2013 年"></a>
-	    				<div class="lileft">
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="6" data-name="<em>陶辉</em>《德黑兰的黄昏》，2014 年"></a>
-		    				<a href="javascript:;" onclick="detailedFun(this)" data-id="8" data-name="<em>严培明</em>《天下乌鸦一般黑》，2012 年"></a>
-		    			</div>
+		    			<a href="javascript:;" onclick="detailedFun(this)" data-id="19" data-name="<em>徐震</em>《永生-萨莫特拉斯的胜利女神、天龙山石窟菩萨半跏像》，2013年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c3.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c5">
+    				<div class="pli_con">
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="6" data-name="<em>陶辉</em>《德黑兰的黄昏》，2014 年"></a>
+	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="8" data-name="<em>严培明</em>《天下乌鸦一般黑》，2012 年"></a>
+	    			</div>
+	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c10.jpg" width="100%" />
+    			</li>
+
+    			<li class="c6">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="9" data-name="<em>杨福东</em>《彩色天空：新女性II》，2014 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c4.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c7">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="10" data-name="<em>张洹</em>《大跃进》，2007 年"></a>
 	    			</div>
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c5.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c8">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="11" data-name="<em>张洹</em>《长岛佛》，2010 - 2011 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="12" data-name="<em>张洹</em>《突然的觉醒》，2006 年"></a>
@@ -107,7 +119,7 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c6.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c9">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="13" data-name="<em>张洹</em>《国庆 1959 》，2009 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="14" data-name="<em>张晓刚</em>《我的理想》，2008 年"></a>
@@ -115,7 +127,7 @@
 	    			<img colorify src="" sourcesrc="/vstyle/imgs/collection/c7.jpg" width="100%" />
     			</li>
 
-    			<li>
+    			<li class="c10">
     				<div class="pli_con">
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="15" data-name="<em>周涛</em>《鸡同鸭讲，猪同狗说》，2005 年"></a>
 	    				<a href="javascript:;" onclick="detailedFun(this)" data-id="16" data-name="<em>周涛</em>《一二三四》，2008 年"></a>
@@ -157,7 +169,11 @@ var infoArr = {
 	"c13": "<p><b>张洹，《国庆 1959 》，2009 年</b></p><p>这幅油画作品分为 3 幅，展现了 1959 年 10 月 1 日中华人民共和国成立 10 周年时俯瞰天安门广场时的场景。这幅作品以政府发布的宣传摄影作品为蓝本，艺术家从上世纪 50 和 80 年代出版的官方报纸中搜集而来。 </p><p>香灰的颗粒质感令人想起老照片的纹理。相互交叠的薄薄香灰营造出深浅不一的色调和层次，赋予这幅作品一种真挚感人的怀旧情调，游走于历史现实与集体梦想的不安回忆之间。 </p><p>张洹以香灰为媒介缔造出过往与现状之间难以捉摸的联系。</p>",
 	"c14": "<p><b>张晓刚，《我的理想》，2008 年</b></p><p>《我的理想》是张晓刚于 2008 年创作的一件装置作品，由一幅绘画和多件青铜雕塑组成。绘画作品上再现了毛泽东时代令儿童深受启发的五个楷模形象：工、农、兵、学、商。</p><p>“画布上这些人物的面孔安详如水。但表象之下则是波澜起伏的情感冲突，”这位艺术家这样说道。 </p><p>红色在中国象征着权力与共产主义，令画布中央的主要人物更为突出。一条细细的红线体现了这些人之间的联系，谁都不能拆散的联系。 </p><p>张晓刚的肖像作品探讨个人在中国家庭和社会中的地位，描绘了社会的一致性，在这样的社会里，集体利益高于个人利益，有时甚至有损个人利益。</p>",
 	"c15": "<p><b>周涛，《鸡同鸭讲，猪同狗说》，2005 年 </b></p>在这部以夜视效果拍摄的作品中，周涛以诙谐戏谑的方式描述了某种形式的现实。周涛通过《鸡同鸭讲，猪同狗说》体现了中国城市与农村人口之间的重大差距，由于生活方式的不同，城市人与农村人已无法沟通交流。 </p><p>围绕在一棵树下的中国农民正在相互交谈。而交谈的话语却被模仿动物的叫声所取代，变成了一只母鸡、一只公鸡、一只鸭子、一头猪、一只狗、一头绵羊和一只蝗虫之间颇具超现实主义意味的对话。 </p><p>这种隐喻重现了《通天塔》的传说，同时还借鉴了童话世界中能够讲话交流的动物形象，从令人讶异的视角看待中国不同群体之间的人际关系现实。</p>",
-	"c16": "<p><b>周涛，《一二三四》，2008 年</b></p><p>表演专业出身的周涛，将电影视为一种专注于身体及其动作，对个人或集体经验的记录。视频《一二三四》专为第7届上海双年展而创作，拍摄了四十多个商家和企业团队的晨练活动。这些身穿制服的团队，在企业歌曲的伴奏下作出整齐划一的动作。渐趋高潮的蒙太奇手法对形式主义进行滑稽的模仿。</p>"
+	"c16": "<p><b>周涛，《一二三四》，2008 年</b></p><p>表演专业出身的周涛，将电影视为一种专注于身体及其动作，对个人或集体经验的记录。视频《一二三四》专为第7届上海双年展而创作，拍摄了四十多个商家和企业团队的晨练活动。这些身穿制服的团队，在企业歌曲的伴奏下作出整齐划一的动作。渐趋高潮的蒙太奇手法对形式主义进行滑稽的模仿。</p>",
+	"c17": "<p><b>艾未未，《树》，2010年</b></p><p>这棵大树巍峨高耸（高7米），树冠庞大，仿佛运至展厅时就是如此。然而，仔细观察会发现，这棵大树是由从中国南方山区搜集以及由艺术家在江西省景德镇市场上购买而来的枯树干和枯树枝组装而成的。这件作品由细木工匠耗费长时间采用传统工艺精心制作而成，暗喻当代中国的现状：一个看起来统一的民族国家，实际上由拥有不同语言、文化和宗教传统的五十多个民族构成，其中一些民族时至今日还在争取独立。</p><p>艾未未通过这一简单意象，提出了如何看待现今中国国家和民族身份的问题，也可被诠释为一种对未来充满希望的讯息，预示着根植于过去，化腐朽为神奇，尽可能缔造一个全新的中国。</p>",
+	"c18": "<p><b>曹斐，《谁的乌托邦》，2006年</b></p><p>《谁的乌托邦》在位于被视为大型国际生产基地的珠江三角洲的欧司朗（Osram）电灯泡生产厂中拍摄，将纪实与想像相结合，围绕年轻工人的日常生活和他们希望在其所选择的想像生活中表达自我的渴望而展开。第一部分重点介绍工作条件和环境，随后则由某些工人以角色扮演的形式表达自己的梦想：摇滚歌手、舞蹈明星、风水大师……这部视频以工人们的静态肖像结束，回归现实，并举起耐人寻味的口号：“我的未来不是梦”。 </p><p>结尾不甚乐观：鉴于我们不能打破陈规与束缚，至少我们能够以不同方式对其加以利用，或在另一个时空建立与之相反的规定，令其失去效力。 </p>",
+	"c19": "<p><b>徐震，《永生-萨莫特拉斯的胜利女神、天龙山石窟菩萨半跏像》，2013 年</b></p><p>徐震的雕塑作品伫立在9号展厅的采光井下方，在参观者看来庄严不朽。这件名为《永生-萨莫特拉斯的胜利女神、天龙山石窟菩萨半跏像》的作品，将两尊见证过往历史的雕像结合在一起，是《永生》系列中最具特色的代表作，《永生》系列将成为历史遗产象征的古老雕塑采用当代材质重新翻制，随后将其组合在一起，达到微妙平衡。在这件作品中，萨莫特拉斯的胜利女神及其作为底座的船首被倒转过来，与在中国天龙山石窟发现的一尊菩萨半跏像颈部对接起来。 </p><p>徐震作品中体现的庄严不朽引人深思，而这种看似不堪一击的平衡感则强调了我们文化的脆弱性。这些作品借鉴佛教佛理和古希腊文化遗产，其复制品由艺术家的生产企业——没顶公司（MadeIn Company）制作。在经济和文化全球化的时代，徐震探讨将我们的文化与过去的关系结合在一起的联系。</p>",
+
 }
 
 
@@ -169,7 +185,10 @@ var imgProArray = [
 	"/vstyle/imgs/collection/c5.jpg",
 	"/vstyle/imgs/collection/c6.jpg",
 	"/vstyle/imgs/collection/c7.jpg",
-	"/vstyle/imgs/collection/c8.jpg"
+	"/vstyle/imgs/collection/c8.jpg",
+	"/vstyle/imgs/collection/c9.jpg",
+	"/vstyle/imgs/collection/c10.jpg",
+	"/vstyle/imgs/collection/c11.jpg"
 ];
 
 
@@ -190,7 +209,7 @@ LoadFn(imgProArray , function (){
 	  gradientDirection: 'to top right',
 	  lazyReveal: {
 	   transition: 0.6, 
-	   delay: 0.3,
+	   delay: 0.2,
 	   steps: true
 	  }
 	});
