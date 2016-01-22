@@ -217,7 +217,7 @@ $(".moreBtn").click(function(){
 })
 
 $(".backBtn2").click(function(){
-	$(".mirror").show();
+	//$(".mirror").show();
 	$(".photoInfo").hide();
 	swiper = null;
 })

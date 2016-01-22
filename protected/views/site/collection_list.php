@@ -241,7 +241,7 @@ $(".moreBtn").click(function(){
 
 $(".backBtn2").click(function(){
 	swiper = null;
-	$(".mirror").show();
+	//$(".mirror").show();
     $(".photoInfo").hide();
 })
 

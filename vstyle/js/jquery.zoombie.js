@@ -36,7 +36,6 @@
             var heightRatio = 0;
 
             imageTag.onload = function(){
-                console.log(this.width);
                 widthRatio = this.width / obj.width();
                 heightRatio = this.height / obj.height();
             }
