@@ -49,6 +49,7 @@
             target.on("touchend", function(){
                 //target.hide();
                 //console.log(target.css("display"));
+                $(".introFooter").show();
                 if(target.css("display") != "none"){
                     $(".narrowIcon").show();
                 }else{
@@ -58,6 +59,7 @@
             $(this).on("touchend", function(){
                 //target.hide();
                 //console.log(target.css("display"));
+                $(".introFooter").show();
                 if(target.css("display") != "none"){
                     $(".narrowIcon").show();
                 }else{
@@ -82,7 +84,7 @@
 
             function setImage(e) {
                 $(".zoomtips").hide();
-                $(".introFooter").show();
+                $(".introFooter").hide();
                 $(".narrowIcon").hide();
 
             	var touch = e.originalEvent.changedTouches[0];
