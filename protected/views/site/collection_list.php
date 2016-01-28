@@ -231,7 +231,7 @@ LoadFn(imgProArray , function (){
 	});
        
 } , function (p){
-    console.log(p+"%");
+    //console.log(p+"%");
 });
 
 var swiper;
