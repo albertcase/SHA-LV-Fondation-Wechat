@@ -236,15 +236,23 @@ LoadFn(imgProArray , function (){
 
 var swiper;
 
+function GetRandomNum(Min,Max)
+{   
+var Range = Max - Min;   
+var Rand = Math.random();   
+return(Min + Math.round(Rand * Range));   
+}   
+var num = GetRandomNum(1,1000);   
+
 function detailedFun(obj){
 	var curw = obj.getAttribute("data-id");
 	var curname = obj.getAttribute("data-name");
 	var workPic = new Image();
-	workPic.src = "/vstyle/imgs/collection/big/" + curw + ".jpg";
+	workPic.src = "/vstyle/imgs/collection/big/" + curw + ".jpg?v="+num;
 	workPic.onload = function(){
 		$(".imgInfo").show();
 		$(".workDetailed h1").html(curname);
-		$("#zoom").attr("src", "/vstyle/imgs/collection/big/" + curw + ".jpg").zoombieLens();
+		$("#zoom").attr("src", "/vstyle/imgs/collection/big/" + curw + ".jpg?v="+num).zoombieLens();
 
 		$("#g_intro").html('<div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide">'+infoArr["c"+curw]+'</div></div></div>');	
 	}
