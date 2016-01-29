@@ -20,10 +20,16 @@
         return this.each(function () {
             obj = $(this);
 
-            var offset = $(this).offset();
+            var offset = $(this).offset(), target;
 
             // Creating lens
-            var target = $("<div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
+            if($(".mirror").size() > 0){
+                $(".mirror").remove();
+                target = $("<div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
+            }else{
+                target = $("<div style='" + lensType + "' class='" + options.lensCss + "'>&nbsp;</div>").appendTo($(this).parent());
+            }
+            
             var targetSize = target.size();
 
             // Calculating actual size of image
